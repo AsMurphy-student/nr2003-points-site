@@ -31,6 +31,14 @@ function App() {
     let pointsPerRace: number[] = [];
 
     for (let p=0;p<driversData[d].finishPositions.length;p++) {
+        if (driversData[d].finishPositions[p] == 0) {
+          if (p > 0) {
+            pointsPerRace[p] = pointsPerRace[p-1];
+          }
+          else{
+            pointsPerRace[p] = 0;
+          }
+        }
         const pt = (5 * (43 - (driversData[d].finishPositions[p] - 1)));
         if (p > 0) {
           pointsPerRace[p] = pt + pointsPerRace[p-1];
@@ -51,9 +59,9 @@ function App() {
 
   let lineArray: LineSeriesType[] = [];
 
-  for (let i=0;i<5;i++) {
+  for (let i=0;i<driversData.length;i++) {
     const newSeries: LineSeriesType = {
-      curve: "linear",
+      curve: "step",
       data: driversPointsPerRace[i],
       label: driversNames[i],
       type: 'line',
