@@ -1,10 +1,13 @@
 import { useState } from 'react'
+import * as React from 'react';
 import './App.css'
 import { BarChart, LineChart, LineSeriesType } from '@mui/x-charts'
-import { Container } from '@mui/material'
+import { Box, Container } from '@mui/material'
 
 import { driversData } from './jsonFetchers/rosterData'
 import { Driver } from './interfaces/driver'
+
+import { DataGrid, GridColDef } from '@mui/x-data-grid';
 
 function App() {
   // const [count, setCount] = useState(0);
@@ -38,6 +41,7 @@ function App() {
           else{
             pointsPerRace[p] = 0;
           }
+          continue;
         }
         const pt = (5 * (43 - (driversData[d].finishPositions[p] - 1)));
         if (p > 0) {
@@ -59,9 +63,11 @@ function App() {
 
   let lineArray: LineSeriesType[] = [];
 
-  for (let i=0;i<driversData.length;i++) {
+  const [count, setCount] = useState(driversData.length);
+
+  for (let i=0;i<count;i++) {
     const newSeries: LineSeriesType = {
-      curve: "step",
+      curve: "linear",
       data: driversPointsPerRace[i],
       label: driversNames[i],
       type: 'line',
@@ -129,13 +135,66 @@ function App() {
         Click on the Vite and React logos to learn more
       </p> */}
 
-      <LineChart
+      {/* <LineChart
         xAxis={[{ data: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11], scaleType: "point" }]}
         series={lineArray}
         height={1000}
         width={2000}
         grid={{ vertical: true, horizontal: true }}
       />
+      <button onClick={() => setCount((count) => count - 1)}>
+          count is {count}
+        </button>
+        <button onClick={() => setCount((count) => count + 1)}>
+          count is {count}
+        </button> */}
+
+      <Box sx={{ height: 400, width: '100%' }}>
+        <DataGrid
+          rows={[
+            { id: 1, lastName: 'Snow', firstName: 'Jon', age: 14 },
+            { id: 2, lastName: 'Lannister', firstName: 'Cersei', age: 31 },
+            { id: 3, lastName: 'Lannister', firstName: 'Jaime', age: 31 },
+            { id: 4, lastName: 'Stark', firstName: 'Arya', age: 11 },
+            { id: 5, lastName: 'Targaryen', firstName: 'Daenerys', age: null },
+            { id: 6, lastName: 'Melisandre', firstName: null, age: 150 },
+            { id: 7, lastName: 'Clifford', firstName: 'Ferrara', age: 44 },
+            { id: 8, lastName: 'Frances', firstName: 'Rossini', age: 36 },
+            { id: 9, lastName: 'Roxie', firstName: 'Harvey', age: 65 },
+          ]}
+          columns={[{ field: 'id', headerName: 'ID', width: 90 },
+            {
+              field: 'firstName',
+              headerName: 'First name',
+              width: 150,
+              editable: true,
+            },
+            {
+              field: 'lastName',
+              headerName: 'Last name',
+              width: 150,
+              editable: true,
+            },
+            {
+              field: 'age',
+              headerName: 'Age',
+              type: 'number',
+              width: 110,
+              editable: true,
+            },]}
+          initialState={{
+            pagination: {
+              paginationModel: {
+                pageSize: 5,
+              },
+            },
+          }}
+          pageSizeOptions={[5]}
+          checkboxSelection
+          disableRowSelectionOnClick
+        />
+      </Box>
+
       {/* <BarChart
         series={[
           { data: driversPoints },
