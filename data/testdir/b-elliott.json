@@ -1,0 +1,39 @@
+{
+	"driverName": "B Elliott",
+	"carNumber": "9",
+	"lapsCompleted": "1747",
+	"lapsLed": "33",
+	"dnfs": "0",
+	"racesLed": "5",
+	"startPositions":[
+		"6",
+		"15",
+		"15",
+		"2",
+		"23",
+		"29",
+		"35",
+		"13",
+		"9",
+		"27",
+		"31"
+	],
+	"startPositionsCount": "11",
+	"starts": "11",
+	"finishPositions":[
+		"12",
+		"5",
+		"9",
+		"16",
+		"6",
+		"6",
+		"4",
+		"14",
+		"6",
+		"23",
+		"17"
+	],
+	"finishPositionsCount": "11",
+	"finishes": "11",
+	"points": "1815"
+}

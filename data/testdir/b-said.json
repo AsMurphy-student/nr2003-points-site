@@ -1,0 +1,39 @@
+{
+	"driverName": "B Said",
+	"carNumber": "67",
+	"lapsCompleted": "1545",
+	"lapsLed": "4",
+	"dnfs": "2",
+	"racesLed": "1",
+	"startPositions":[
+		"34",
+		"10",
+		"41",
+		"40",
+		"43",
+		"20",
+		"31",
+		"33",
+		"39",
+		"1",
+		"11"
+	],
+	"startPositionsCount": "11",
+	"starts": "11",
+	"finishPositions":[
+		"23",
+		"43",
+		"36",
+		"42",
+		"37",
+		"22",
+		"29",
+		"26",
+		"32",
+		"29",
+		"29"
+	],
+	"finishPositionsCount": "11",
+	"finishes": "11",
+	"points": "645"
+}

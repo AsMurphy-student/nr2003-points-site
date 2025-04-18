@@ -1,0 +1,39 @@
+{
+	"driverName": "M Kenseth",
+	"carNumber": "17",
+	"lapsCompleted": "1706",
+	"lapsLed": "49",
+	"dnfs": "1",
+	"racesLed": "3",
+	"startPositions":[
+		"17",
+		"6",
+		"9",
+		"20",
+		"11",
+		"10",
+		"17",
+		"19",
+		"20",
+		"9",
+		"7"
+	],
+	"startPositionsCount": "11",
+	"starts": "11",
+	"finishPositions":[
+		"35",
+		"13",
+		"13",
+		"14",
+		"9",
+		"7",
+		"22",
+		"8",
+		"16",
+		"16",
+		"4"
+	],
+	"finishPositionsCount": "11",
+	"finishes": "11",
+	"points": "1610"
+}

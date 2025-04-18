@@ -1,0 +1,39 @@
+{
+	"driverName": "J Burton",
+	"carNumber": "99",
+	"lapsCompleted": "1636",
+	"lapsLed": "76",
+	"dnfs": "1",
+	"racesLed": "4",
+	"startPositions":[
+		"1",
+		"16",
+		"5",
+		"30",
+		"14",
+		"4",
+		"29",
+		"3",
+		"7",
+		"18",
+		"21"
+	],
+	"startPositionsCount": "11",
+	"starts": "11",
+	"finishPositions":[
+		"6",
+		"11",
+		"8",
+		"4",
+		"1",
+		"24",
+		"7",
+		"41",
+		"1",
+		"20",
+		"3"
+	],
+	"finishPositionsCount": "11",
+	"finishes": "11",
+	"points": "1780"
+}

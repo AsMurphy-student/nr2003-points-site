@@ -1,0 +1,39 @@
+{
+	"driverName": "R Gordon",
+	"carNumber": "31",
+	"lapsCompleted": "1511",
+	"lapsLed": "5",
+	"dnfs": "3",
+	"racesLed": "1",
+	"startPositions":[
+		"16",
+		"12",
+		"7",
+		"23",
+		"39",
+		"31",
+		"23",
+		"40",
+		"8",
+		"21",
+		"29"
+	],
+	"startPositionsCount": "11",
+	"starts": "11",
+	"finishPositions":[
+		"42",
+		"39",
+		"37",
+		"30",
+		"28",
+		"36",
+		"9",
+		"12",
+		"2",
+		"24",
+		"19"
+	],
+	"finishPositionsCount": "11",
+	"finishes": "11",
+	"points": "995"
+}

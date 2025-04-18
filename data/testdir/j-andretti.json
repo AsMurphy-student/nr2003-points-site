@@ -1,0 +1,39 @@
+{
+	"driverName": "J Andretti",
+	"carNumber": "43",
+	"lapsCompleted": "1705",
+	"lapsLed": "2",
+	"dnfs": "1",
+	"racesLed": "1",
+	"startPositions":[
+		"30",
+		"21",
+		"12",
+		"29",
+		"19",
+		"13",
+		"18",
+		"21",
+		"36",
+		"36",
+		"22"
+	],
+	"startPositionsCount": "11",
+	"starts": "11",
+	"finishPositions":[
+		"38",
+		"28",
+		"21",
+		"32",
+		"19",
+		"5",
+		"21",
+		"27",
+		"22",
+		"11",
+		"23"
+	],
+	"finishPositionsCount": "11",
+	"finishes": "11",
+	"points": "1150"
+}

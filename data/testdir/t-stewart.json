@@ -1,0 +1,39 @@
+{
+	"driverName": "T Stewart",
+	"carNumber": "20",
+	"lapsCompleted": "1745",
+	"lapsLed": "52",
+	"dnfs": "0",
+	"racesLed": "7",
+	"startPositions":[
+		"3",
+		"3",
+		"30",
+		"25",
+		"13",
+		"2",
+		"3",
+		"15",
+		"10",
+		"8",
+		"3"
+	],
+	"startPositionsCount": "11",
+	"starts": "11",
+	"finishPositions":[
+		"19",
+		"2",
+		"2",
+		"7",
+		"23",
+		"25",
+		"15",
+		"4",
+		"26",
+		"15",
+		"2"
+	],
+	"finishPositionsCount": "11",
+	"finishes": "11",
+	"points": "1715"
+}

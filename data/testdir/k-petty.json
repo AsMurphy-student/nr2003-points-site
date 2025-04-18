@@ -1,0 +1,39 @@
+{
+	"driverName": "K Petty",
+	"carNumber": "45",
+	"lapsCompleted": "1639",
+	"lapsLed": "8",
+	"dnfs": "1",
+	"racesLed": "2",
+	"startPositions":[
+		"25",
+		"40",
+		"39",
+		"6",
+		"16",
+		"14",
+		"39",
+		"29",
+		"35",
+		"24",
+		"24"
+	],
+	"startPositionsCount": "11",
+	"starts": "11",
+	"finishPositions":[
+		"41",
+		"9",
+		"24",
+		"11",
+		"34",
+		"30",
+		"26",
+		"5",
+		"29",
+		"36",
+		"35"
+	],
+	"finishPositionsCount": "11",
+	"finishes": "11",
+	"points": "990"
+}

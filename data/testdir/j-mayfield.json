@@ -1,0 +1,39 @@
+{
+	"driverName": "J Mayfield",
+	"carNumber": "19",
+	"lapsCompleted": "1681",
+	"lapsLed": "24",
+	"dnfs": "1",
+	"racesLed": "2",
+	"startPositions":[
+		"22",
+		"22",
+		"19",
+		"24",
+		"9",
+		"16",
+		"1",
+		"7",
+		"23",
+		"0",
+		"28"
+	],
+	"startPositionsCount": "11",
+	"starts": "10",
+	"finishPositions":[
+		"18",
+		"30",
+		"31",
+		"24",
+		"8",
+		"29",
+		"17",
+		"30",
+		"34",
+		"0",
+		"11"
+	],
+	"finishPositionsCount": "11",
+	"finishes": "10",
+	"points": "1040"
+}

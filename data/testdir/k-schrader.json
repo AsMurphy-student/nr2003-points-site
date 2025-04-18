@@ -1,0 +1,39 @@
+{
+	"driverName": "K Schrader",
+	"carNumber": "49",
+	"lapsCompleted": "1640",
+	"lapsLed": "0",
+	"dnfs": "2",
+	"racesLed": "0",
+	"startPositions":[
+		"13",
+		"24",
+		"16",
+		"38",
+		"32",
+		"27",
+		"27",
+		"37",
+		"40",
+		"32",
+		"25"
+	],
+	"startPositionsCount": "11",
+	"starts": "11",
+	"finishPositions":[
+		"14",
+		"33",
+		"26",
+		"38",
+		"27",
+		"34",
+		"41",
+		"40",
+		"28",
+		"31",
+		"33"
+	],
+	"finishPositionsCount": "11",
+	"finishes": "11",
+	"points": "655"
+}

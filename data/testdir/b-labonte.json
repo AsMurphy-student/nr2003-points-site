@@ -1,0 +1,39 @@
+{
+	"driverName": "B Labonte",
+	"carNumber": "18",
+	"lapsCompleted": "1725",
+	"lapsLed": "43",
+	"dnfs": "1",
+	"racesLed": "3",
+	"startPositions":[
+		"20",
+		"1",
+		"36",
+		"33",
+		"33",
+		"24",
+		"24",
+		"18",
+		"12",
+		"6",
+		"6"
+	],
+	"startPositionsCount": "11",
+	"starts": "11",
+	"finishPositions":[
+		"13",
+		"15",
+		"42",
+		"29",
+		"7",
+		"33",
+		"18",
+		"22",
+		"17",
+		"13",
+		"32"
+	],
+	"finishPositionsCount": "11",
+	"finishes": "11",
+	"points": "1190"
+}
