@@ -19,22 +19,22 @@ for (let d=0;d<drivers.length;d++) {
             t15++;
             t20++;
         }
-        else if (finish >= 5) {
+        else if (finish <= 5) {
             t5++;
             t10++;
             t15++;
             t20++;
         }
-        else if (finish >= 10) {
+        else if (finish <= 10) {
             t10++;
             t15++;
             t20++;
         }
-        else if (finish >= 15) {
+        else if (finish <= 15) {
             t15++;
             t20++;
         }
-        else if (finish >= 20) {
+        else if (finish <= 20) {
             t20++;
         }
     })

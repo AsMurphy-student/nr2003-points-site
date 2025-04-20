@@ -221,11 +221,12 @@ function App() {
           count is {count}
         </button> */}
 
-      <Box sx={{ height: 400, width: '1500px', margin: 0, display: 'flex', flexDirection: 'column' }}>
+      <Box sx={{ height: 1000, width: '100%', margin: 0, padding: 0, display: 'flex', flexDirection: 'column' }}>
         <DataGrid
           rows={rows}
           columns={columns}
           pageSizeOptions={[10]}
+          showToolbar
         />
       </Box>
 
