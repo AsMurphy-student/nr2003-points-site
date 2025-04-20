@@ -10,6 +10,11 @@ interface Driver {
     finishPositions: number[];
     finishes: number;
     points: number;
+    wins: number;
+    t5: number;
+    t10: number;
+    t15: number;
+    t20: number;
 }
 
 export type { Driver }

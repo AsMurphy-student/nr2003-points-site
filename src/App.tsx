@@ -7,7 +7,7 @@ import { Box, Container } from '@mui/material'
 import { driversData } from './jsonFetchers/rosterData'
 import { Driver } from './interfaces/driver'
 
-import { DataGrid, GridColDef } from '@mui/x-data-grid';
+import { DataGrid, GridColDef, GridRowsProp, GridValidRowModel } from '@mui/x-data-grid';
 
 function App() {
   // const [count, setCount] = useState(0);
@@ -16,7 +16,7 @@ function App() {
     return b.points - a.points;
   });
 
-  driversData.forEach((value: Driver) => {
+  driversData.forEach((value) => {
     console.log(value);
   });
 
@@ -53,12 +53,6 @@ function App() {
     }
 
     driversPointsPerRace.push(pointsPerRace);
-  }
-
-  type seriesType = {
-    curve: string;
-    data: number[];
-    label: string;
   }
 
   let lineArray: LineSeriesType[] = [];
@@ -99,6 +93,84 @@ function App() {
   //     kurtPoints[i] = pt;
   //   }
   // }
+
+  const columns: GridColDef[] = [
+    { 
+      field: 'id', 
+      headerName: 'Rank', 
+      width: 90, 
+      type: 'number', 
+    },
+    {
+      field: 'driverName',
+      headerName: 'Driver Name',
+      width: 150,
+      type: 'string',
+    },
+    {
+      field: 'carNumber',
+      headerName: 'Car Number',
+      width: 150,
+      type: 'number',
+    },
+    {
+      field: 'points',
+      headerName: 'Points',
+      width: 150,
+      type: 'number',
+    },
+    {
+      field: 'wins',
+      headerName: 'Wins',
+      width: 150,
+      type: 'number',
+    },
+    {
+      field: 't5',
+      headerName: 'T5',
+      width: 150,
+      type: 'number',
+    },
+    {
+      field: 't10',
+      headerName: 'T10',
+      width: 150,
+      type: 'number',
+    },
+    {
+      field: 't15',
+      headerName: 'T15',
+      width: 150,
+      type: 'number',
+    },
+    {
+      field: 't20',
+      headerName: 'T20',
+      width: 150,
+      type: 'number',
+    },
+  ];
+
+  let temprows = [];
+  
+  for (let d=0;d<driversData.length;d++) {
+    const driverRow: GridValidRowModel = {
+      id: d+1,
+      driverName: driversData[d].driverName,
+      carNumber: driversData[d].carNumber,
+      points: driversData[d].points,
+      wins: driversData[d].wins,
+      t5: driversData[d].t5,
+      t10: driversData[d].t10,
+      t15: driversData[d].t15,
+      t20: driversData[d].t20,
+    }
+
+    temprows.push(driverRow);
+
+  }
+
+  const rows: GridRowsProp = temprows;
 
   return (
     <>
@@ -149,49 +221,11 @@ function App() {
           count is {count}
         </button> */}
 
-      <Box sx={{ height: 400, width: '100%' }}>
+      <Box sx={{ height: 400, width: '1500px', margin: 0, display: 'flex', flexDirection: 'column' }}>
         <DataGrid
-          rows={[
-            { id: 1, lastName: 'Snow', firstName: 'Jon', age: 14 },
-            { id: 2, lastName: 'Lannister', firstName: 'Cersei', age: 31 },
-            { id: 3, lastName: 'Lannister', firstName: 'Jaime', age: 31 },
-            { id: 4, lastName: 'Stark', firstName: 'Arya', age: 11 },
-            { id: 5, lastName: 'Targaryen', firstName: 'Daenerys', age: null },
-            { id: 6, lastName: 'Melisandre', firstName: null, age: 150 },
-            { id: 7, lastName: 'Clifford', firstName: 'Ferrara', age: 44 },
-            { id: 8, lastName: 'Frances', firstName: 'Rossini', age: 36 },
-            { id: 9, lastName: 'Roxie', firstName: 'Harvey', age: 65 },
-          ]}
-          columns={[{ field: 'id', headerName: 'ID', width: 90 },
-            {
-              field: 'firstName',
-              headerName: 'First name',
-              width: 150,
-              editable: true,
-            },
-            {
-              field: 'lastName',
-              headerName: 'Last name',
-              width: 150,
-              editable: true,
-            },
-            {
-              field: 'age',
-              headerName: 'Age',
-              type: 'number',
-              width: 110,
-              editable: true,
-            },]}
-          initialState={{
-            pagination: {
-              paginationModel: {
-                pageSize: 5,
-              },
-            },
-          }}
-          pageSizeOptions={[5]}
-          checkboxSelection
-          disableRowSelectionOnClick
+          rows={rows}
+          columns={columns}
+          pageSizeOptions={[10]}
         />
       </Box>
 
