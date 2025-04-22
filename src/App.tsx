@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import './App.css'
-import { LineChart, LineSeriesType } from '@mui/x-charts'
+import { ChartContainer, LineChart, LinePlot, LineSeriesType } from '@mui/x-charts'
 import { Box, createTheme, Stack } from '@mui/material'
 
 import { driversData, driversPointsPerRace, racesData } from './jsonFetchers/rosterData'
@@ -11,6 +11,25 @@ import { ThemeProvider } from '@emotion/react'
 function App() {
   // const [count, setCount] = useState(0);
   
+  const defaultTheme = createTheme({
+    palette: {
+      mode: 'dark',
+      text: {
+        primary: '#fff'
+      },
+      primary: {
+        main: '#1976d2',
+        light: '#42a5f5',
+        dark: '#1565c0',
+        contrastText: '#fff',
+      },
+      secondary: {
+        main: '#000000',
+        contrastText: '#fff',
+      }
+    },
+    
+  });
 
   driversData.forEach((value) => {
     console.log(value);
@@ -227,8 +246,136 @@ function App() {
   const xAxisRaceArray = new Array(racesData.length).fill(null).map((_,i) => i + 1)
 
   return (
-    <>
-      {/* <div>
+    
+      
+        <ThemeProvider theme={defaultTheme}>
+          <Box sx={{flexGrow: 1, minHeight: '100vh', backgroundColor: 'secondary.main'}}>
+            <Stack direction='row' sx={{ flexGrow: 1}}>
+              <Box sx={{ height: 1000, width: '50%', margin: 0, padding: '1rem' }}>
+                <DataGrid
+                  rows={rows}
+                  columns={columns}
+                  autoPageSize
+                  checkboxSelection
+                  disableRowSelectionOnClick
+                  onRowSelectionModelChange={(ids) => {
+                    setLineArray([]);
+
+                    let newArray: LineSeriesType[] = [];
+
+                    ids.ids.forEach(row => {
+                      const index = Number(row) - 1;
+
+                      const newSeries: LineSeriesType = {
+                        curve: "linear",
+                        data: driversPointsPerRace[index],
+                        label: driversNames[index],
+                        type: 'line',
+                        showMark: false,
+                      };
+                      
+                      newArray.push(newSeries);
+                      
+                    });
+
+                    newArray.sort((a: LineSeriesType, b: LineSeriesType) => {
+                      return b.data![b.data!.length - 1]! - a.data![a.data!.length - 1]!;
+                    });
+
+                    setLineArray(newArray);
+                  }}
+                  showToolbar
+                />
+              </Box>
+
+              <Box sx={{ height: 1000, width: '100%', margin: 0, padding: '1rem' }}>
+                <LineChart
+                  slotProps={{
+                    noDataOverlay: {
+                        message: "Check Drivers in Table to Add Data",
+                    }
+                  }}
+                  // sx={{
+                  //   //change left yAxis label styles
+                  //   "& .MuiChartsAxis-left .MuiChartsAxis-tickLabel":{
+                  //     strokeWidth:"1.0",
+                  //     fill:"#ffffff"
+                  //   },
+                  //   // change all labels fontFamily shown on both xAxis and yAxis
+                  //   // "& .MuiChartsAxis-tickContainer .MuiChartsAxis-tickLabel":{
+                  //   //     fontFamily: "Roboto",
+                  //   //   },
+                  //     // change bottom label styles
+                  //     "& .MuiChartsAxis-bottom .MuiChartsAxis-tickLabel":{
+                  //         strokeWidth:"0.5",
+                  //         fill:"#ffffff"
+                  //     },
+                  //     "& .MuiChartsAxis-bottom .MuiChartsAxis-label":{
+                  //         strokeWidth:"0.5",
+                  //         fill:"#ffffff"
+                  //     },
+                  //     // "& .MuiChartsGrid-root .MuiChartsGrid-verticalLine":{
+                  //     //     strokeWidth:"0.5",
+                  //     //     fill:"#ffffff"
+                  //     // },
+                  //     ".MuiChartsGrid-line":{
+                  //         strokeWidth:"0.5",
+                  //         fill:"#1976d2",
+                  //         shapeRendering: 'crispEdges',
+                  //     },
+                  //       // bottomAxis Line Styles
+                  //     "& .MuiChartsAxis-bottom .MuiChartsAxis-line":{
+                  //       stroke:"#ffffff",
+                  //       strokeWidth:1.0
+                  //     },
+                  //     // leftAxis Line Styles
+                  //     "& .MuiChartsAxis-left .MuiChartsAxis-line":{
+                  //       stroke:"#ffffff",
+                  //       strokeWidth:1.0
+                  //     },
+                  //       // bottomAxis Line Styles
+                  //       "& .MuiChartsAxis-bottom .MuiChartsAxis-tick":{
+                  //         stroke:"#ffffff",
+                  //         strokeWidth:1.0
+                  //       },
+                  //       // leftAxis Line Styles
+                  //       "& .MuiChartsAxis-left .MuiChartsAxis-tick":{
+                  //         stroke:"#ffffff",
+                  //         strokeWidth:1.0
+                  //       },
+                  //       // leftAxis Line Styles
+                  //       "& .MuiChartsXAxis-line":{
+                  //         stroke:"#ffffff",
+                  //         strokeWidth:1.0
+                  //       }
+                  // }}  
+                  xAxis={[{ data: xAxisRaceArray, scaleType: "point", label: 'Races' }]}
+                  yAxis={[{label: 'Points'}]}
+                  series={lineArray}
+                  height={1000}
+                  hideLegend
+                  grid={{ vertical: true, horizontal: true, }}
+                />
+              </Box>
+
+              {/* <ChartContainer
+                height={300}
+                series={[
+                  {
+                    type: 'line',
+                    data: [13, 13, 54, 651, 657, 987, 64, 654, 954, 654, 897, 84],
+                  },
+                ]}
+                xAxis={[{ data: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12], position: 'none' }]}
+                yAxis={[{ position: 'none' }]}
+              >
+                <LinePlot />
+              </ChartContainer> */}
+
+            </Stack>
+          </Box>
+
+          {/* <div>
         
         <Container
           sx={{backgroundColor: 'white'}}
@@ -274,57 +421,8 @@ function App() {
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button> */}
-        
-          <Stack direction='row' sx={{ flexGrow: 1}}>
-            <Box sx={{ height: 1000, width: '50%', margin: 0, padding: '1rem' }}>
-              <DataGrid
-                rows={rows}
-                columns={columns}
-                autoPageSize
-                checkboxSelection
-                disableRowSelectionOnClick
-                onRowSelectionModelChange={(ids) => {
-                  setLineArray([]);
 
-                  let newArray: LineSeriesType[] = [];
-
-                  ids.ids.forEach(row => {
-                    const index = Number(row) - 1;
-
-                    const newSeries: LineSeriesType = {
-                      curve: "linear",
-                      data: driversPointsPerRace[index],
-                      label: driversNames[index],
-                      type: 'line',
-                      showMark: false,
-                    };
-                    
-                    newArray.push(newSeries);
-                    
-                  });
-
-                  newArray.sort((a: LineSeriesType, b: LineSeriesType) => {
-                    return b.data![b.data!.length - 1]! - a.data![a.data!.length - 1]!;
-                  });
-
-                  setLineArray(newArray);
-                }}
-                showToolbar
-              />
-            </Box>
-
-            <Box sx={{ height: 1000, width: '100%', margin: 0, padding: '1rem' }}>
-              <LineChart
-                xAxis={[{ data: xAxisRaceArray, scaleType: "point", label: 'Races' }]}
-                yAxis={[{label: 'Points'}]}
-                series={lineArray}
-                height={1000}
-                hideLegend
-                grid={{ vertical: true, horizontal: true }}
-              />
-            </Box>
-          </Stack>
-      {/* <BarChart
+{/* <BarChart
         series={[
           { data: driversPoints },
         ]}
@@ -332,7 +430,10 @@ function App() {
         width={2460}
         xAxis={[{ data: driversNames, scaleType: 'band' }]}
       /> */}
-    </>
+
+        </ThemeProvider>
+      
+    
   )
 }
 
