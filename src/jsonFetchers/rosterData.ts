@@ -105,7 +105,10 @@ for (let d=0;d<drivers.length;d++) {
         else if (finish <= 20 && finish != 0) {
             t20++;
         }
-    })
+    });
+
+    let avgSta = Number((drivers[d].startPositions.map((i) => Number(i)).reduce((acc, val) => acc + val, 0) / drivers[d].startPositions.length).toFixed(1));
+    let avgFin = Number((drivers[d].finishPositions.map((i) => Number(i)).reduce((acc, val) => acc + val, 0) / drivers[d].finishPositions.length).toFixed(1));
 
     let newDriver: Driver = {
         driverName: drivers[d].driverName,
@@ -126,6 +129,8 @@ for (let d=0;d<drivers.length;d++) {
         t20: t20,
         next: (d > 0 ? Number(drivers[d].points) - Number(drivers[d-1].points) : 0),
         ldr: (d > 0 ? Number(drivers[0].points) - Number(drivers[d].points) : 0),
+        avgSta: avgSta,
+        avgFin: avgFin,
     };
     driversData.push(newDriver);
 }

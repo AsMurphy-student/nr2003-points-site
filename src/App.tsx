@@ -1,20 +1,20 @@
 import { useState } from 'react'
-import * as React from 'react';
 import './App.css'
-import { BarChart, LineChart, LineSeriesType } from '@mui/x-charts'
-import { Box, Container, Stack } from '@mui/material'
+import { LineChart, LineSeriesType } from '@mui/x-charts'
+import { Box, createTheme, Stack } from '@mui/material'
 
-import { driversData, driversPointsPerRace } from './jsonFetchers/rosterData'
-import { Driver } from './interfaces/driver'
+import { driversData, driversPointsPerRace, racesData } from './jsonFetchers/rosterData'
 
 import { DataGrid, GridColDef, GridRowsProp, GridValidRowModel } from '@mui/x-data-grid';
+import { ThemeProvider } from '@emotion/react'
 
 function App() {
   // const [count, setCount] = useState(0);
+  
 
-  // driversData.forEach((value) => {
-  //   console.log(value);
-  // });
+  driversData.forEach((value) => {
+    console.log(value);
+  });
 
   const driversPoints = driversData.map((i) => {
     return i.points
@@ -178,6 +178,20 @@ function App() {
       minWidth: 90,
       type: 'number',
     },
+    {
+      field: 'avgSta',
+      headerName: 'AvgSta',
+      flex: 1,
+      minWidth: 90,
+      type: 'number',
+    },
+    {
+      field: 'avgFin',
+      headerName: 'AvgFin',
+      flex: 1,
+      minWidth: 90,
+      type: 'number',
+    },
   ];
 
   let temprows: GridValidRowModel[] = [];
@@ -200,6 +214,8 @@ function App() {
       lapsCompleted: driversData[d].lapsCompleted,
       lapsLed: driversData[d].lapsLed,
       racesLed: driversData[d].racesLed,
+      avgSta: driversData[d].avgSta,
+      avgFin: driversData[d].avgFin,
     }
 
     temprows.push(driverRow);
@@ -207,6 +223,8 @@ function App() {
   }
 
   const rows: GridRowsProp = temprows;
+
+  const xAxisRaceArray = new Array(racesData.length).fill(null).map((_,i) => i + 1)
 
   return (
     <>
@@ -256,57 +274,56 @@ function App() {
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
         </button> */}
+        
+          <Stack direction='row' sx={{ flexGrow: 1}}>
+            <Box sx={{ height: 1000, width: '50%', margin: 0, padding: '1rem' }}>
+              <DataGrid
+                rows={rows}
+                columns={columns}
+                autoPageSize
+                checkboxSelection
+                disableRowSelectionOnClick
+                onRowSelectionModelChange={(ids) => {
+                  setLineArray([]);
 
-        <Stack direction='row'>
-          <Box sx={{ height: 1000, width: '50%', margin: 0, padding: '1rem' }}>
-            <DataGrid
-              rows={rows}
-              columns={columns}
-              autoPageSize
-              checkboxSelection
-              disableRowSelectionOnClick
-              onRowSelectionModelChange={(ids) => {
-                setLineArray([]);
+                  let newArray: LineSeriesType[] = [];
 
-                let newArray: LineSeriesType[] = [];
+                  ids.ids.forEach(row => {
+                    const index = Number(row) - 1;
 
-                ids.ids.forEach(row => {
-                  const index = Number(row) - 1;
+                    const newSeries: LineSeriesType = {
+                      curve: "linear",
+                      data: driversPointsPerRace[index],
+                      label: driversNames[index],
+                      type: 'line',
+                      showMark: false,
+                    };
+                    
+                    newArray.push(newSeries);
+                    
+                  });
 
-                  const newSeries: LineSeriesType = {
-                    curve: "linear",
-                    data: driversPointsPerRace[index],
-                    label: driversNames[index],
-                    type: 'line',
-                    showMark: false,
-                  };
-                  
-                  newArray.push(newSeries);
-                  
-                });
+                  newArray.sort((a: LineSeriesType, b: LineSeriesType) => {
+                    return b.data![b.data!.length - 1]! - a.data![a.data!.length - 1]!;
+                  });
 
-                newArray.sort((a: LineSeriesType, b: LineSeriesType) => {
-                  return b.data![b.data!.length - 1]! - a.data![a.data!.length - 1]!;
-                });
+                  setLineArray(newArray);
+                }}
+                showToolbar
+              />
+            </Box>
 
-                setLineArray(newArray);
-              }}
-              showToolbar
-            />
-          </Box>
-
-          <Box sx={{ height: 1000, width: '100%', margin: 0, padding: '1rem' }}>
-            <LineChart
-              xAxis={[{ data: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13], scaleType: "point", label: 'Races' }]}
-              yAxis={[{label: 'Points'}]}
-              series={lineArray}
-              height={1000}
-              hideLegend
-              grid={{ vertical: true, horizontal: true }}
-            />
-          </Box>
-        </Stack>
-
+            <Box sx={{ height: 1000, width: '100%', margin: 0, padding: '1rem' }}>
+              <LineChart
+                xAxis={[{ data: xAxisRaceArray, scaleType: "point", label: 'Races' }]}
+                yAxis={[{label: 'Points'}]}
+                series={lineArray}
+                height={1000}
+                hideLegend
+                grid={{ vertical: true, horizontal: true }}
+              />
+            </Box>
+          </Stack>
       {/* <BarChart
         series={[
           { data: driversPoints },

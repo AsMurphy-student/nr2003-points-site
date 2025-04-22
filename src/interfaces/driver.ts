@@ -17,6 +17,8 @@ interface Driver {
     t20: number;
     next: number;
     ldr: number;
+    avgSta: number;
+    avgFin: number;
 }
 
 export type { Driver }
