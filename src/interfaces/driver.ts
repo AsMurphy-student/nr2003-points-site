@@ -15,6 +15,8 @@ interface Driver {
     t10: number;
     t15: number;
     t20: number;
+    next: number;
+    ldr: number;
 }
 
 export type { Driver }

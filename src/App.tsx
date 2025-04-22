@@ -2,9 +2,9 @@ import { useState } from 'react'
 import * as React from 'react';
 import './App.css'
 import { BarChart, LineChart, LineSeriesType } from '@mui/x-charts'
-import { Box, Container } from '@mui/material'
+import { Box, Container, Stack } from '@mui/material'
 
-import { driversData } from './jsonFetchers/rosterData'
+import { driversData, driversPointsPerRace } from './jsonFetchers/rosterData'
 import { Driver } from './interfaces/driver'
 
 import { DataGrid, GridColDef, GridRowsProp, GridValidRowModel } from '@mui/x-data-grid';
@@ -12,13 +12,9 @@ import { DataGrid, GridColDef, GridRowsProp, GridValidRowModel } from '@mui/x-da
 function App() {
   // const [count, setCount] = useState(0);
 
-  driversData.sort((a: Driver, b: Driver) => {
-    return b.points - a.points;
-  });
-
-  driversData.forEach((value) => {
-    console.log(value);
-  });
+  // driversData.forEach((value) => {
+  //   console.log(value);
+  // });
 
   const driversPoints = driversData.map((i) => {
     return i.points
@@ -28,47 +24,22 @@ function App() {
     return i.driverName
   });
 
-  let driversPointsPerRace: number[][] = [];
+  // let lineArray: LineSeriesType[] = [];
 
-  for (let d=0;d<driversData.length;d++) {
-    let pointsPerRace: number[] = [];
+  const [lineArray, setLineArray] = useState<LineSeriesType[]>([]);
 
-    for (let p=0;p<driversData[d].finishPositions.length;p++) {
-        if (driversData[d].finishPositions[p] == 0) {
-          if (p > 0) {
-            pointsPerRace[p] = pointsPerRace[p-1];
-          }
-          else{
-            pointsPerRace[p] = 0;
-          }
-          continue;
-        }
-        const pt = (5 * (43 - (driversData[d].finishPositions[p] - 1)));
-        if (p > 0) {
-          pointsPerRace[p] = pt + pointsPerRace[p-1];
-        }
-        else{
-          pointsPerRace[p] = pt;
-        }
-    }
+  // const [count, setCount] = useState(driversData.length);
 
-    driversPointsPerRace.push(pointsPerRace);
-  }
-
-  let lineArray: LineSeriesType[] = [];
-
-  const [count, setCount] = useState(driversData.length);
-
-  for (let i=0;i<count;i++) {
-    const newSeries: LineSeriesType = {
-      curve: "linear",
-      data: driversPointsPerRace[i],
-      label: driversNames[i],
-      type: 'line',
-      showMark: false,
-    };
-    lineArray.push(newSeries);
-  }
+  // for (let i=0;i<count;i++) {
+  //   const newSeries: LineSeriesType = {
+  //     curve: "linear",
+  //     data: driversPointsPerRace[i],
+  //     label: driversNames[i],
+  //     type: 'line',
+  //     showMark: false,
+  //   };
+  //   lineArray.push(newSeries);
+  // }
 
   // let myPoints = myFinishPositions.map((i) => Number(i));
 
@@ -98,60 +69,118 @@ function App() {
     { 
       field: 'id', 
       headerName: 'Rank', 
-      width: 90, 
+      flex: 1,
+      maxWidth: 90,
       type: 'number', 
     },
     {
       field: 'driverName',
       headerName: 'Driver Name',
-      width: 150,
+      flex: 1,
+      minWidth: 150,
       type: 'string',
     },
     {
       field: 'carNumber',
       headerName: 'Car Number',
-      width: 150,
+      flex: 1,
+      minWidth: 100,
       type: 'number',
     },
     {
       field: 'points',
       headerName: 'Points',
-      width: 150,
+      flex: 1,
+      minWidth: 90,
+      type: 'number',
+    },
+    {
+      field: 'next',
+      headerName: 'Next',
+      flex: 1,
+      minWidth: 90,
+      type: 'number',
+    },
+    {
+      field: 'ldr',
+      headerName: 'Ldr',
+      flex: 1,
+      minWidth: 90,
+      type: 'number',
+    },
+    {
+      field: 'starts',
+      headerName: 'Starts',
+      flex: 1,
+      minWidth: 90,
       type: 'number',
     },
     {
       field: 'wins',
       headerName: 'Wins',
-      width: 150,
+      flex: 1,
+      minWidth: 90,
       type: 'number',
     },
     {
       field: 't5',
       headerName: 'T5',
-      width: 150,
+      flex: 1,
+      minWidth: 90,
       type: 'number',
     },
     {
       field: 't10',
       headerName: 'T10',
-      width: 150,
+      flex: 1,
+      minWidth: 90,
       type: 'number',
     },
     {
       field: 't15',
       headerName: 'T15',
-      width: 150,
+      flex: 1,
+      minWidth: 90,
       type: 'number',
     },
     {
       field: 't20',
       headerName: 'T20',
-      width: 150,
+      flex: 1,
+      minWidth: 90,
+      type: 'number',
+    },
+    {
+      field: 'dnfs',
+      headerName: 'DNFS',
+      flex: 1,
+      minWidth: 90,
+      type: 'number',
+    },
+    {
+      field: 'lapsCompleted',
+      headerName: 'Laps Completed',
+      flex: 1,
+      minWidth: 120,
+      type: 'number',
+    },
+    {
+      field: 'lapsLed',
+      headerName: 'Laps Led',
+      flex: 1,
+      minWidth: 90,
+      type: 'number',
+    },
+    {
+      field: 'racesLed',
+      headerName: 'Races Led',
+      flex: 1,
+      minWidth: 90,
       type: 'number',
     },
   ];
 
-  let temprows = [];
+  let temprows: GridValidRowModel[] = [];
   
   for (let d=0;d<driversData.length;d++) {
     const driverRow: GridValidRowModel = {
@@ -159,11 +188,18 @@ function App() {
       driverName: driversData[d].driverName,
       carNumber: driversData[d].carNumber,
       points: driversData[d].points,
+      next: driversData[d].next,
+      ldr: driversData[d].ldr,
+      starts: driversData[d].starts,
       wins: driversData[d].wins,
       t5: driversData[d].t5,
       t10: driversData[d].t10,
       t15: driversData[d].t15,
       t20: driversData[d].t20,
+      dnfs: driversData[d].dnfs,
+      lapsCompleted: driversData[d].lapsCompleted,
+      lapsLed: driversData[d].lapsLed,
+      racesLed: driversData[d].racesLed,
     }
 
     temprows.push(driverRow);
@@ -221,14 +257,55 @@ function App() {
           count is {count}
         </button> */}
 
-      <Box sx={{ height: 1000, width: '100%', margin: 0, padding: 0, display: 'flex', flexDirection: 'column' }}>
-        <DataGrid
-          rows={rows}
-          columns={columns}
-          pageSizeOptions={[10]}
-          showToolbar
-        />
-      </Box>
+        <Stack direction='row'>
+          <Box sx={{ height: 1000, width: '50%', margin: 0, padding: '1rem' }}>
+            <DataGrid
+              rows={rows}
+              columns={columns}
+              autoPageSize
+              checkboxSelection
+              disableRowSelectionOnClick
+              onRowSelectionModelChange={(ids) => {
+                setLineArray([]);
+
+                let newArray: LineSeriesType[] = [];
+
+                ids.ids.forEach(row => {
+                  const index = Number(row) - 1;
+
+                  const newSeries: LineSeriesType = {
+                    curve: "linear",
+                    data: driversPointsPerRace[index],
+                    label: driversNames[index],
+                    type: 'line',
+                    showMark: false,
+                  };
+                  
+                  newArray.push(newSeries);
+                  
+                });
+
+                newArray.sort((a: LineSeriesType, b: LineSeriesType) => {
+                  return b.data![b.data!.length - 1]! - a.data![a.data!.length - 1]!;
+                });
+
+                setLineArray(newArray);
+              }}
+              showToolbar
+            />
+          </Box>
+
+          <Box sx={{ height: 1000, width: '100%', margin: 0, padding: '1rem' }}>
+            <LineChart
+              xAxis={[{ data: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13], scaleType: "point", label: 'Races' }]}
+              yAxis={[{label: 'Points'}]}
+              series={lineArray}
+              height={1000}
+              hideLegend
+              grid={{ vertical: true, horizontal: true }}
+            />
+          </Box>
+        </Stack>
 
       {/* <BarChart
         series={[
