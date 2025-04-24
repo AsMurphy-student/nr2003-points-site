@@ -15,7 +15,7 @@ type raceDriver = {
 
 interface race {
     qualis: qualiDriver[];
-    races: raceDriver[];
+    finishes: raceDriver[];
     raceName: string;
     raceDate: string;
     cautions: string;

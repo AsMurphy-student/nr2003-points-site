@@ -45,7 +45,7 @@ for (let r=0;r<races.length;r++) {
 
     const race: race = {
         qualis: qualis,
-        races: finishes,
+        finishes: finishes,
         raceName: races[r].raceName,
         raceDate: races[r].raceDate,
         cautions: races[r].cautions,
@@ -187,7 +187,7 @@ for (let d=0;d<driversData.length;d++) {
             }
             continue;
         }
-        let pt = (5 * (racesData[p].races.length - (driversData[d].finishPositions[p] - 1)));
+        let pt = (5 * (racesData[p].finishes.length - (driversData[d].finishPositions[p] - 1)));
 
         let lapsDriverLed = races[p].race[finishingPosition - 1].lapsLed;
 
