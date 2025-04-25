@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import { ChartContainer, LineChart, LinePlot, LineSeriesType } from '@mui/x-charts'
-import { Box, Button, createTheme, Stack } from '@mui/material'
+import { Accordion, AccordionDetails, AccordionSummary, Box, Button, createTheme, Stack, Typography } from '@mui/material'
 
 import { driversData, driversPointsPerRace, racesData } from './jsonFetchers/rosterData'
 
@@ -9,6 +9,7 @@ import { DataGrid, GridColDef, GridColumnsPanel, GridRowsProp, GridValidRowModel
 import { ThemeProvider } from '@emotion/react'
 import ChartLineGraph from './components/ChartLineGraph'
 import LapPieChart from './components/LapPieChart'
+
 
 function App() {
   const [count, setCount] = useState(0);
@@ -35,7 +36,7 @@ function App() {
 
   return (
         <ThemeProvider theme={defaultTheme}>
-          <Box sx={{flexGrow: 1, minHeight: '100vh', backgroundColor: 'secondary.main', placeContent: 'center'}}>
+          {/* <Box sx={{flexGrow: 1, minHeight: '100vh', backgroundColor: 'secondary.main', placeContent: 'center'}}>
             <ChartLineGraph driversData={driversData} driversPointsPerRace={driversPointsPerRace} racesData={racesData} />
             <h1 style={{color: 'white'}}>{racesData[count].raceName}</h1>
             <LapPieChart raceData={racesData[count]} />
@@ -51,7 +52,31 @@ function App() {
           sx={{color: 'secondary.contrastText'}}>
             Button
           </Button>
-          </Box>
+          </Box> */}
+
+          <Accordion>
+            <AccordionSummary
+              aria-controls="panel1-content"
+              id="panel1-header"
+            >
+              <Typography component="span">Accordion 1</Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              <ChartLineGraph driversData={driversData} driversPointsPerRace={driversPointsPerRace} racesData={racesData} />
+            </AccordionDetails>
+          </Accordion>
+          <Accordion>
+            <AccordionSummary
+              aria-controls="panel2-content"
+              id="panel2-header"
+            >
+              <Typography component="span">Accordion 2</Typography>
+            </AccordionSummary>
+            <AccordionDetails>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+              malesuada lacus ex, sit amet blandit leo lobortis eget.
+            </AccordionDetails>
+          </Accordion>
         </ThemeProvider>
   )
 }
