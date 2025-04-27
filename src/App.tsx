@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 // import { ChartContainer, LineChart, LinePlot, LineSeriesType } from '@mui/x-charts'
-import { Box, Button, createTheme } from '@mui/material'
+import { Box, Button, Container, createTheme, Stack } from '@mui/material'
 
 import { driversData, driversPointsPerRace, racesData } from './jsonFetchers/rosterData'
 
@@ -9,6 +9,7 @@ import { driversData, driversPointsPerRace, racesData } from './jsonFetchers/ros
 import { ThemeProvider } from '@emotion/react'
 import ChartLineGraph from './components/ChartLineGraph'
 import LapPieChart from './components/LapPieChart'
+import RaceInfo from './components/RaceInfo'
 
 
 function App() {
@@ -16,12 +17,14 @@ function App() {
   
   const defaultTheme = createTheme({
     palette: {
+      
       mode: 'dark',
       background: {
         default: '#000',
       },
       text: {
         primary: '#fff',
+        secondary: '#fff',
       },
       primary: {
         main: '#1976d2',
@@ -62,9 +65,11 @@ function App() {
 
   return (
         <ThemeProvider theme={defaultTheme}>
-          <Box sx={{flexGrow: 1, minHeight: '100vh', backgroundColor: 'secondary.main', placeContent: 'center'}}>
+          {/* <Box sx={{flexGrow: 1, minHeight: '100vh', backgroundColor: 'secondary.main'}}> */}
+          <Container maxWidth='xl' sx={{flexGrow: 1, minHeight: '100vh', minWidth: '100%', backgroundColor: 'secondary.main'}}>
             <ChartLineGraph driversData={driversData} driversPointsPerRace={driversPointsPerRace} racesData={racesData} />
-            <h1 style={{color: 'white'}}>{racesData[count].raceName}</h1>
+            
+            {/* <h1 style={{color: 'white'}}>{racesData[count].raceName}</h1>
             <LapPieChart raceData={racesData[count]} />
           <Button
           onClick={() => {
@@ -77,8 +82,37 @@ function App() {
           }}
           sx={{color: 'secondary.contrastText'}}>
             Button
-          </Button>
-          </Box>
+          </Button> */}
+
+            <Stack direction='row'>
+              <Button
+                sx={{color: '#fff', border: '1px solid white'}}
+                onClick={() => {
+                  if (count > 0) {
+                    setCount(count - 1);
+                  }
+                  else {
+                    setCount(racesData.length - 1);
+                  }
+                }}
+              >Prev</Button>
+              <RaceInfo raceData={racesData[count]} raceNumber={count + 1} />
+              <Button
+                sx={{color: '#fff', border: '1px solid white'}}
+                onClick={() => {
+                  if (count < racesData.length - 1) {
+                    setCount(count + 1);
+                  }
+                  else {
+                    setCount(0);
+                  }
+                }}
+              >Next</Button>
+            </Stack>
+          </Container>
+
+
+          {/* </Box> */}
 
           {/* <Accordion>
             <AccordionSummary
