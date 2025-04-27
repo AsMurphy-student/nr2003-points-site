@@ -1,7 +1,6 @@
-import { Box, Stack, ThemeProvider } from "@mui/material";
+import { Box, Stack } from "@mui/material";
 import { race } from "../interfaces/race";
 import LapPieChart from "./LapPieChart";
-import { Theme } from "@emotion/react";
 
 function RaceInfo(props: {raceData: race, raceNumber: number}) {
   const { raceData, raceNumber } = props;
