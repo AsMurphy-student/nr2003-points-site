@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { LineChart, LineSeriesType } from '@mui/x-charts'
 import { Box, Stack} from '@mui/material'
 
-import { DataGrid, GridColDef, GridColumnHeaderMenu, GridRowsProp, GridValidRowModel } from '@mui/x-data-grid';
+import { DataGrid, GridColDef, GridRowsProp, GridValidRowModel } from '@mui/x-data-grid';
 import { Driver } from '../interfaces/driver';
 import { race } from '../interfaces/race';
 
@@ -182,7 +182,6 @@ function ChartLineGraph(props: {driversData: Driver[], driversPointsPerRace: num
     <Stack direction='row' sx={{ flexGrow: 1}}>
       <Box sx={{ height: 1000, width: '50%', margin: 0, padding: '1rem' }}>
         <DataGrid
-          slotProps={{columnMenu: {color: 'secondary.contrastText'}}}
           rows={rows}
           columns={columns}
           autoPageSize

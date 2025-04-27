@@ -1,11 +1,11 @@
 import { useState } from 'react'
 import './App.css'
-import { ChartContainer, LineChart, LinePlot, LineSeriesType } from '@mui/x-charts'
-import { Accordion, AccordionDetails, AccordionSummary, Box, Button, createTheme, Stack, Typography } from '@mui/material'
+// import { ChartContainer, LineChart, LinePlot, LineSeriesType } from '@mui/x-charts'
+import { Box, Button, createTheme } from '@mui/material'
 
 import { driversData, driversPointsPerRace, racesData } from './jsonFetchers/rosterData'
 
-import { DataGrid, GridColDef, GridColumnsPanel, GridRowsProp, GridValidRowModel } from '@mui/x-data-grid';
+// import { DataGrid, GridColDef, GridColumnsPanel, GridRowsProp, GridValidRowModel } from '@mui/x-data-grid';
 import { ThemeProvider } from '@emotion/react'
 import ChartLineGraph from './components/ChartLineGraph'
 import LapPieChart from './components/LapPieChart'
@@ -17,8 +17,11 @@ function App() {
   const defaultTheme = createTheme({
     palette: {
       mode: 'dark',
+      background: {
+        default: '#000',
+      },
       text: {
-        primary: '#fff'
+        primary: '#fff',
       },
       primary: {
         main: '#1976d2',
@@ -29,14 +32,37 @@ function App() {
       secondary: {
         main: '#000000',
         contrastText: '#fff',
-      }
+      },
     },
     
   });
 
+  // const defaultTheme = createTheme({
+  //   colorSchemes: {
+  //     light: {
+  //       palette: {
+  //         DataGrid: {
+  //           bg: '#f8fafc',
+  //           pinnedBg: '#f1f5f9',
+  //           headerBg: '#eaeff5',
+  //         },
+  //       },
+  //     },
+  //     dark: {
+  //       palette: {
+  //         DataGrid: {
+  //           bg: '#334155',
+  //           pinnedBg: '#293548',
+  //           headerBg: '#1e293b',
+  //         },
+  //       },
+  //     },
+  //   },
+  // });
+
   return (
         <ThemeProvider theme={defaultTheme}>
-          {/* <Box sx={{flexGrow: 1, minHeight: '100vh', backgroundColor: 'secondary.main', placeContent: 'center'}}>
+          <Box sx={{flexGrow: 1, minHeight: '100vh', backgroundColor: 'secondary.main', placeContent: 'center'}}>
             <ChartLineGraph driversData={driversData} driversPointsPerRace={driversPointsPerRace} racesData={racesData} />
             <h1 style={{color: 'white'}}>{racesData[count].raceName}</h1>
             <LapPieChart raceData={racesData[count]} />
@@ -52,9 +78,9 @@ function App() {
           sx={{color: 'secondary.contrastText'}}>
             Button
           </Button>
-          </Box> */}
+          </Box>
 
-          <Accordion>
+          {/* <Accordion>
             <AccordionSummary
               aria-controls="panel1-content"
               id="panel1-header"
@@ -76,7 +102,7 @@ function App() {
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
               malesuada lacus ex, sit amet blandit leo lobortis eget.
             </AccordionDetails>
-          </Accordion>
+          </Accordion> */}
         </ThemeProvider>
   )
 }
