@@ -1,5 +1,6 @@
 
 // import { Box} from '@mui/material'
+import { Box } from '@mui/material';
 import { race } from '../interfaces/race';
 import { PieChart, PieValueType } from '@mui/x-charts';
 
@@ -25,6 +26,7 @@ function LapPieChart(props: {raceData: race, height: number, hideLegend: boolean
   });
 
   return (
+          <Box sx={{placeContent: 'center'}}>
             <PieChart
               series={[
                 {
@@ -38,6 +40,7 @@ function LapPieChart(props: {raceData: race, height: number, hideLegend: boolean
               hideLegend={hideLegend}
               height={height}
             />
+          </Box>
   )
 }
 

@@ -19,6 +19,7 @@ function RaceInfo(props: {raceData: race, raceNumber: number}) {
         <h3 style={{color: '#fff'}}>{raceData.pitstopFrequency}</h3>
       </Box>
       <Box sx={{backgroundColor: 'black', placeContent: 'center', flexGrow: 0.1, padding: '2rem'}}>
+        <h2 style={{color: '#fff', textAlign: 'center'}}>Laps Led</h2>
         <LapPieChart raceData={raceData}/>
       </Box>
     </Stack>
