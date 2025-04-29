@@ -1,4 +1,4 @@
-import { Box, Grid, Stack } from "@mui/material";
+import { Grid } from "@mui/material";
 import { race } from "../interfaces/race";
 import LapPieChart from "./LapPieChart";
 
