@@ -1,6 +1,3 @@
-
-// import { Box} from '@mui/material'
-import { Box } from '@mui/material';
 import { race } from '../interfaces/race';
 import { PieChart, PieValueType } from '@mui/x-charts';
 
