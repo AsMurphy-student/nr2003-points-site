@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { LineChart, LineSeriesType } from '@mui/x-charts'
-import { Box, Stack} from '@mui/material'
+import { Box, Container, Grid, Stack} from '@mui/material'
 
 import { DataGrid, GridColDef, GridRowsProp, GridValidRowModel } from '@mui/x-data-grid';
 import { Driver } from '../interfaces/driver';
@@ -179,59 +179,60 @@ function ChartLineGraph(props: {driversData: Driver[], driversPointsPerRace: num
   const xAxisRaceArray = new Array(racesData.length).fill(null).map((_,i) => i + 1)
 
   return (
-    <Stack direction='row' sx={{ flexGrow: 1}}>
-      <Box sx={{ height: 1000, width: '50%', margin: 0, padding: '1rem' }}>
-        <DataGrid
-          rows={rows}
-          columns={columns}
-          autoPageSize
-          checkboxSelection
-          disableRowSelectionOnClick
-          onRowSelectionModelChange={(ids) => {
-            setLineArray([]);
+      <Grid container spacing={2} direction={{sm: 'column', md: 'row'}}>
+        <Grid minHeight='100%' sx={{maxWidth: {sm: '100%', md: '50%'}}}>
+          <DataGrid
+            rows={rows}
+            columns={columns}
+            autoPageSize
+            checkboxSelection
+            disableRowSelectionOnClick
+            onRowSelectionModelChange={(ids) => {
+              setLineArray([]);
 
-            let newArray: LineSeriesType[] = [];
+              let newArray: LineSeriesType[] = [];
 
-            ids.ids.forEach(row => {
-              const index = Number(row) - 1;
+              ids.ids.forEach(row => {
+                const index = Number(row) - 1;
 
-              const newSeries: LineSeriesType = {
-                curve: "linear",
-                data: driversPointsPerRace[index],
-                label: driversNames[index],
-                type: 'line',
-                showMark: false,
-              };
-              
-              newArray.push(newSeries);
-              
-            });
+                const newSeries: LineSeriesType = {
+                  curve: "linear",
+                  data: driversPointsPerRace[index],
+                  label: driversNames[index],
+                  type: 'line',
+                  showMark: false,
+                };
+                
+                newArray.push(newSeries);
+                
+              });
 
-            newArray.sort((a: LineSeriesType, b: LineSeriesType) => {
-              return b.data![b.data!.length - 1]! - a.data![a.data!.length - 1]!;
-            });
+              newArray.sort((a: LineSeriesType, b: LineSeriesType) => {
+                return b.data![b.data!.length - 1]! - a.data![a.data!.length - 1]!;
+              });
 
-            setLineArray(newArray);
-          }}
-        />
-      </Box>
+              setLineArray(newArray);
+            }}
+          />
+        </Grid>
 
-      <Box sx={{ height: 1000, width: '100%', margin: 0, padding: '1rem' }}>
-        <LineChart
-          slotProps={{
-            noDataOverlay: {
-                message: "Check Drivers in Table to Add Data",
-            }
-          }}
-          xAxis={[{ data: xAxisRaceArray, scaleType: "point", label: 'Races' }]}
-          yAxis={[{label: 'Points'}]}
-          series={lineArray}
-          height={1000}
-          hideLegend
-          grid={{ vertical: true, horizontal: true, }}
-        />
-      </Box>
-    </Stack>
+        <Grid size='grow'>
+          <LineChart
+            slotProps={{
+              noDataOverlay: {
+                  message: "Check Drivers in Table to Add Data",
+              }
+            }}
+            xAxis={[{ data: xAxisRaceArray, scaleType: "point", label: 'Races' }]}
+            yAxis={[{label: 'Points'}]}
+            series={lineArray}
+            height={1000}
+            hideLegend
+            grid={{ vertical: true, horizontal: true, }}
+          />
+        </Grid>
+
+      </Grid>
   )
 }
 
