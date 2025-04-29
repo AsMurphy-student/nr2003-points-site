@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 // import { ChartContainer, LineChart, LinePlot, LineSeriesType } from '@mui/x-charts'
-import { Button, Container, createTheme, Stack } from '@mui/material'
+import { Button, Container, createTheme, Grid, Stack, Typography } from '@mui/material'
 
 import { driversData, driversPointsPerRace, racesData } from './jsonFetchers/rosterData'
 
@@ -84,31 +84,50 @@ function App() {
             Button
           </Button> */}
 
-            <Stack direction='row'>
-              <Button
-                sx={{color: '#fff', border: '1px solid white'}}
-                onClick={() => {
-                  if (count > 0) {
-                    setCount(count - 1);
-                  }
-                  else {
-                    setCount(racesData.length - 1);
-                  }
-                }}
-              >Prev</Button>
-              <RaceInfo raceData={racesData[count]} raceNumber={count + 1} />
-              <Button
-                sx={{color: '#fff', border: '1px solid white'}}
-                onClick={() => {
-                  if (count < racesData.length - 1) {
-                    setCount(count + 1);
-                  }
-                  else {
-                    setCount(0);
-                  }
-                }}
-              >Next</Button>
-            </Stack>
+            <Grid container direction='column' sx={{padding: '2rem'}}>
+
+              <Grid size='auto' sx={{placeContent: 'center'}}>
+                <Grid container direction='row'>
+                  <Grid size='auto' sx={{placeContent: 'center'}}>
+                    <Button
+                      sx={{color: '#fff', border: '1px solid white'}}
+                      onClick={() => {
+                        if (count > 0) {
+                          setCount(count - 1);
+                        }
+                        else {
+                          setCount(racesData.length - 1);
+                        }
+                      }}
+                    >Prev</Button>
+                  </Grid>
+
+                  <Grid size='grow'>
+                    <h1 style={{color: '#fff', textAlign: 'center'}} >#{count + 1}</h1>
+                  </Grid>
+                  
+                  <Grid size='auto' sx={{placeContent: 'center'}}>
+                    <Button
+                      sx={{color: '#fff', border: '1px solid white'}}
+                      onClick={() => {
+                        if (count < racesData.length - 1) {
+                          setCount(count + 1);
+                        }
+                        else {
+                          setCount(0);
+                        }
+                      }}
+                    >Next</Button>
+                  </Grid>
+                </Grid>
+
+              </Grid>
+              
+              <Grid size='auto' sx={{placeContent: 'center'}}>
+                <RaceInfo raceData={racesData[count]} />
+              </Grid>
+
+            </Grid>
           </Container>
 
 

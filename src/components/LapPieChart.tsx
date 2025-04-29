@@ -26,13 +26,12 @@ function LapPieChart(props: {raceData: race, height: number, hideLegend: boolean
   });
 
   return (
-          <Box sx={{placeContent: 'center'}}>
             <PieChart
               series={[
                 {
                   data: dataArray,
                   innerRadius: 20,
-                  outerRadius: 150,
+                  outerRadius: 120,
                   paddingAngle: 2,
                   cornerRadius: 5,
                 },
@@ -40,7 +39,6 @@ function LapPieChart(props: {raceData: race, height: number, hideLegend: boolean
               hideLegend={hideLegend}
               height={height}
             />
-          </Box>
   )
 }
 

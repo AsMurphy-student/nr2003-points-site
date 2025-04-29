@@ -179,7 +179,7 @@ function ChartLineGraph(props: {driversData: Driver[], driversPointsPerRace: num
   const xAxisRaceArray = new Array(racesData.length).fill(null).map((_,i) => i + 1)
 
   return (
-      <Grid container spacing={2} direction={{sm: 'column', md: 'row'}}>
+      <Grid container spacing={0} direction={{sm: 'column', md: 'row'}}>
         <Grid minHeight='100%' sx={{maxWidth: {sm: '100%', md: '50%'}}}>
           <DataGrid
             rows={rows}
@@ -216,14 +216,14 @@ function ChartLineGraph(props: {driversData: Driver[], driversPointsPerRace: num
           />
         </Grid>
 
-        <Grid size='grow'>
+        <Grid size='grow' sx={{maxWidth: {sm: '100%', md: '50%'}}}>
           <LineChart
             slotProps={{
               noDataOverlay: {
                   message: "Check Drivers in Table to Add Data",
               }
             }}
-            xAxis={[{ data: xAxisRaceArray, scaleType: "point", label: 'Races' }]}
+            xAxis={[{ data: xAxisRaceArray, scaleType: 'point', label: 'Races' }]}
             yAxis={[{label: 'Points'}]}
             series={lineArray}
             height={1000}
