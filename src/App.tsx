@@ -10,10 +10,12 @@ import { ThemeProvider } from '@emotion/react'
 import ChartLineGraph from './components/ChartLineGraph'
 // import LapPieChart from './components/LapPieChart'
 import RaceInfo from './components/RaceInfo'
+import { useNavigate } from 'react-router-dom'
 
 
 function App() {
   const [count, setCount] = useState(0);
+  const navigate = useNavigate();
   
   const defaultTheme = createTheme({
     palette: {
@@ -132,6 +134,13 @@ function App() {
                 <RaceInfo raceData={racesData[count]} />
               </Grid>
 
+              <Button
+              onClick={() => {
+                navigate('/nr2003-points-site/2025season/race-1');
+              }}>
+                Navigate
+              </Button>
+
             </Grid>
           </Container>
 
@@ -161,6 +170,18 @@ function App() {
               malesuada lacus ex, sit amet blandit leo lobortis eget.
             </AccordionDetails>
           </Accordion> */}
+
+
+          {/* <BrowserRouter>
+            <Routes>
+              <Route path={path}>
+                {racesData.map((i, index) => {
+                  return <Route path={`race-${index}`} element={<RaceInfo raceData={i} />}/>
+                })}
+                <Route path='2025season' element={<App path='2025season'/>}/>
+              </Route>
+            </Routes>
+          </BrowserRouter> */}
         </ThemeProvider>
   )
 }
