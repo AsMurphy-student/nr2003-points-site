@@ -1,10 +1,11 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { LineChart, LineSeriesType } from '@mui/x-charts'
-import { Grid } from '@mui/material'
+import { Container, Grid, Slider } from '@mui/material'
 
-import { DataGrid, GridColDef, GridRowsProp, GridValidRowModel } from '@mui/x-data-grid';
+import { DataGrid, GridColDef, GridRowSelectionModel, GridRowsProp, GridValidRowModel } from '@mui/x-data-grid';
 import { Driver } from '../interfaces/driver';
 import { race } from '../interfaces/race';
+import React from 'react';
 
 function ChartLineGraph(props: {driversData: Driver[], driversPointsPerRace: number[][], racesData: race[]}) {
   const driversData = props.driversData;
@@ -171,12 +172,70 @@ function ChartLineGraph(props: {driversData: Driver[], driversPointsPerRace: num
     }
 
     temprows.push(driverRow);
-
   }
 
   const rows: GridRowsProp = temprows;
 
-  const xAxisRaceArray = new Array(racesData.length).fill(null).map((_,i) => i + 1)
+  const [xAxisRaceArray, setXAxisRaceArray] = React.useState<number[]>(new Array(racesData.length).fill(null).map((_,i) => i + 1));
+
+
+  const [value, setValue] = React.useState<number[]>([1, racesData.length]);
+  const [idArray, setIdArray] = React.useState<GridRowSelectionModel>();
+
+
+  const updateLineSeries = (ids: GridRowSelectionModel | undefined) => {
+    setLineArray([]);
+
+    let newArray: LineSeriesType[] = [];
+
+    ids!.ids.forEach(row => {
+      const index = Number(row) - 1;
+
+      let pointsArray = driversPointsPerRace[index];
+      pointsArray = pointsArray.slice(value[0] - 1, value[1]);
+
+      console.log(pointsArray);
+
+      const newSeries: LineSeriesType = {
+        curve: "linear",
+        data: pointsArray,
+        label: driversNames[index],
+        type: 'line',
+        showMark: false,
+      };
+      
+      newArray.push(newSeries);
+      
+    });
+
+    newArray.sort((a: LineSeriesType, b: LineSeriesType) => {
+      return b.data![b.data!.length - 1]! - a.data![a.data!.length - 1]!;
+    });
+
+    setLineArray(newArray);
+  }
+
+
+
+  const handleChange = (_event: Event, newValue: number[]) => {
+    setValue(newValue);
+  };
+
+  useEffect(() => {
+    let newArray = new Array(racesData.length).fill(null).map((_,i) => i + 1);
+    newArray = newArray.slice(value[0] - 1, value[1]);
+    // console.log(newArray);
+
+    setLineArray([]);
+    setXAxisRaceArray(newArray);
+  }, [value]);
+
+
+  useEffect(() => {
+    if (idArray)
+      updateLineSeries(idArray);
+  }, [xAxisRaceArray]);
+
 
   return (
       <Grid container spacing={0} direction={{sm: 'column', md: 'row'}}>
@@ -188,30 +247,39 @@ function ChartLineGraph(props: {driversData: Driver[], driversPointsPerRace: num
             checkboxSelection
             disableRowSelectionOnClick
             onRowSelectionModelChange={(ids) => {
-              setLineArray([]);
+              setIdArray(ids);
 
-              let newArray: LineSeriesType[] = [];
+              updateLineSeries(ids);
 
-              ids.ids.forEach(row => {
-                const index = Number(row) - 1;
+              // setLineArray([]);
 
-                const newSeries: LineSeriesType = {
-                  curve: "linear",
-                  data: driversPointsPerRace[index],
-                  label: driversNames[index],
-                  type: 'line',
-                  showMark: false,
-                };
+              // let newArray: LineSeriesType[] = [];
+
+              // ids.ids.forEach(row => {
+              //   const index = Number(row) - 1;
+
+              //   let pointsArray = driversPointsPerRace[index];
+              //   pointsArray = pointsArray.slice(value[0] - 1, value[1]);
+
+              //   console.log(pointsArray);
+
+              //   const newSeries: LineSeriesType = {
+              //     curve: "linear",
+              //     data: pointsArray,
+              //     label: driversNames[index],
+              //     type: 'line',
+              //     showMark: false,
+              //   };
                 
-                newArray.push(newSeries);
+              //   newArray.push(newSeries);
                 
-              });
+              // });
 
-              newArray.sort((a: LineSeriesType, b: LineSeriesType) => {
-                return b.data![b.data!.length - 1]! - a.data![a.data!.length - 1]!;
-              });
+              // newArray.sort((a: LineSeriesType, b: LineSeriesType) => {
+              //   return b.data![b.data!.length - 1]! - a.data![a.data!.length - 1]!;
+              // });
 
-              setLineArray(newArray);
+              // setLineArray(newArray);
             }}
           />
         </Grid>
@@ -230,6 +298,18 @@ function ChartLineGraph(props: {driversData: Driver[], driversPointsPerRace: num
             hideLegend
             grid={{ vertical: true, horizontal: true, }}
           />
+          <Container sx={{ width: '100%', paddingLeft: '2rem', paddingRight: '2rem' }}>
+            <Slider
+              getAriaLabel={() => 'Temperature range'}
+              value={value}
+              onChange={handleChange}
+              valueLabelDisplay="auto"
+              marks
+              min={1}
+              max={racesData.length}
+            />
+            <h3 style={{color: '#fff', textAlign: 'center'}}>Range of Races to Show</h3>
+          </Container>
         </Grid>
 
       </Grid>

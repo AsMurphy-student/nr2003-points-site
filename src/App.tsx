@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 // import { ChartContainer, LineChart, LinePlot, LineSeriesType } from '@mui/x-charts'
-import { Button, Container, createTheme, Grid } from '@mui/material'
+import { AppBar, Button, Container, createTheme, Grid } from '@mui/material'
 
 import { driversData, driversPointsPerRace, racesData } from './jsonFetchers/rosterData'
 
@@ -67,6 +67,11 @@ function App() {
         <ThemeProvider theme={defaultTheme}>
           {/* <Box sx={{flexGrow: 1, minHeight: '100vh', backgroundColor: 'secondary.main'}}> */}
           <Container maxWidth='xl' sx={{flexGrow: 1, minHeight: '100vh', minWidth: '100%', backgroundColor: 'secondary.main'}}>
+
+            <AppBar>
+              
+            </AppBar>
+
             <ChartLineGraph driversData={driversData} driversPointsPerRace={driversPointsPerRace} racesData={racesData} />
             
             {/* <h1 style={{color: 'white'}}>{racesData[count].raceName}</h1>

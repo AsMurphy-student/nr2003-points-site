@@ -3,10 +3,10 @@
 {
 	"driverName": "A Murphy",
 	"carNumber": "177",
-	"lapsCompleted": "2443",
-	"lapsLed": "796",
+	"lapsCompleted": "2643",
+	"lapsLed": "893",
 	"dnfs": "1",
-	"racesLed": "12",
+	"racesLed": "13",
 	"startPositions":[
 		"27",
 		"18",
@@ -22,10 +22,11 @@
 		"40",
 		"3",
 		"3",
-		"2"
+		"2",
+		"1"
 	],
-	"startPositionsCount": "15",
-	"starts": "15",
+	"startPositionsCount": "16",
+	"starts": "16",
 	"finishPositions":[
 		"32",
 		"35",
@@ -41,19 +42,20 @@
 		"16",
 		"41",
 		"25",
-		"1"
+		"1",
+		"10"
 	],
-	"finishPositionsCount": "15",
-	"finishes": "15",
-	"points": "1920"
+	"finishPositionsCount": "16",
+	"finishes": "16",
+	"points": "2100"
 },
 {
-	"driverName": "B Bodine",
-	"carNumber": "11",
-	"lapsCompleted": "1797",
-	"lapsLed": "1",
-	"dnfs": "2",
-	"racesLed": "1",
+	  "driverName": "B Bodine",
+	  "carNumber": "11",
+	  "lapsCompleted": "1797",
+	  "lapsLed": "1",
+	  "dnfs": "2",
+	  "racesLed": "1",
 	"startPositions":[
 		"29",
 		"27",
@@ -69,10 +71,11 @@
 		"31",
 		"37",
 		"0",
-		"20"
+		"20",
+		"0"
 	],
-	"startPositionsCount": "15",
-	"starts": "12",
+	  "startPositionsCount": "16",
+	  "starts": "12",
 	"finishPositions":[
 		"31",
 		"22",
@@ -88,16 +91,17 @@
 		"29",
 		"20",
 		"0",
-		"32"
+		"32",
+		"0"
 	],
-	"finishPositionsCount": "15",
-	"finishes": "12",
-	"points": "935"
+  	"finishPositionsCount": "16",
+	  "finishes": "12",
+	  "points": "935"
 },
 {
 	"driverName": "B Elliott",
 	"carNumber": "9",
-	"lapsCompleted": "2483",
+	"lapsCompleted": "2682",
 	"lapsLed": "104",
 	"dnfs": "0",
 	"racesLed": "6",
@@ -116,10 +120,11 @@
 		"6",
 		"25",
 		"7",
-		"26"
+		"26",
+		"39"
 	],
-	"startPositionsCount": "15",
-	"starts": "15",
+	"startPositionsCount": "16",
+	"starts": "16",
 	"finishPositions":[
 		"12",
 		"5",
@@ -135,16 +140,17 @@
 		"6",
 		"14",
 		"28",
-		"9"
+		"9",
+		"21"
 	],
-	"finishPositionsCount": "15",
-	"finishes": "15",
-	"points": "2390"
+	"finishPositionsCount": "16",
+	"finishes": "16",
+	"points": "2505"
 },
 {
 	"driverName": "B Labonte",
 	"carNumber": "18",
-	"lapsCompleted": "2460",
+	"lapsCompleted": "2660",
 	"lapsLed": "43",
 	"dnfs": "1",
 	"racesLed": "3",
@@ -163,10 +169,11 @@
 		"23",
 		"31",
 		"29",
-		"30"
+		"30",
+		"7"
 	],
-	"startPositionsCount": "15",
-	"starts": "15",
+	"startPositionsCount": "16",
+	"starts": "16",
 	"finishPositions":[
 		"13",
 		"15",
@@ -182,16 +189,17 @@
 		"11",
 		"7",
 		"20",
-		"25"
+		"25",
+		"13"
 	],
-	"finishPositionsCount": "15",
-	"finishes": "15",
-	"points": "1730"
+	"finishPositionsCount": "16",
+	"finishes": "16",
+	"points": "1885"
 },
 {
 	"driverName": "B Said",
 	"carNumber": "67",
-	"lapsCompleted": "1992",
+	"lapsCompleted": "2192",
 	"lapsLed": "4",
 	"dnfs": "3",
 	"racesLed": "1",
@@ -210,10 +218,11 @@
 		"14",
 		"22",
 		"35",
-		"37"
+		"37",
+		"31"
 	],
-	"startPositionsCount": "15",
-	"starts": "15",
+	"startPositionsCount": "16",
+	"starts": "16",
 	"finishPositions":[
 		"23",
 		"43",
@@ -229,11 +238,12 @@
 		"33",
 		"19",
 		"0",
-		"39"
+		"39",
+		"15"
 	],
-	"finishPositionsCount": "15",
-	"finishes": "14",
-	"points": "835"
+	"finishPositionsCount": "16",
+	"finishes": "15",
+	"points": "980"
 },
 {
 	  "driverName": "B Simpson",
@@ -257,9 +267,10 @@
 		"0",
 		"0",
 		"0",
+		"0",
 		"0"
 	],
-	  "startPositionsCount": "15",
+	  "startPositionsCount": "16",
 	  "starts": "1",
 	"finishPositions":[
 		"0",
@@ -276,19 +287,20 @@
 		"0",
 		"0",
 		"0",
+		"0",
 		"0"
 	],
-  	"finishPositionsCount": "15",
+  	"finishPositionsCount": "16",
 	  "finishes": "1",
 	  "points": "20"
 },
 {
-	  "driverName": "C Gibson",
-	  "carNumber": "105",
-	  "lapsCompleted": "264",
-	  "lapsLed": "0",
-	  "dnfs": "0",
-	  "racesLed": "0",
+	"driverName": "C Gibson",
+	"carNumber": "105",
+	"lapsCompleted": "462",
+	"lapsLed": "0",
+	"dnfs": "0",
+	"racesLed": "0",
 	"startPositions":[
 		"43",
 		"0",
@@ -304,10 +316,11 @@
 		"0",
 		"0",
 		"0",
-		"0"
+		"0",
+		"38"
 	],
-	  "startPositionsCount": "15",
-	  "starts": "2",
+	"startPositionsCount": "16",
+	"starts": "3",
 	"finishPositions":[
 		"27",
 		"0",
@@ -323,16 +336,17 @@
 		"0",
 		"0",
 		"0",
-		"0"
+		"0",
+		"35"
 	],
-  	"finishPositionsCount": "15",
-	  "finishes": "2",
-	  "points": "110"
+	"finishPositionsCount": "16",
+	"finishes": "3",
+	"points": "155"
 },
 {
 	"driverName": "D Blaney",
 	"carNumber": "77",
-	"lapsCompleted": "2481",
+	"lapsCompleted": "2680",
 	"lapsLed": "1",
 	"dnfs": "0",
 	"racesLed": "1",
@@ -351,10 +365,11 @@
 		"28",
 		"33",
 		"5",
-		"11"
+		"11",
+		"16"
 	],
-	"startPositionsCount": "15",
-	"starts": "15",
+	"startPositionsCount": "16",
+	"starts": "16",
 	"finishPositions":[
 		"10",
 		"12",
@@ -370,16 +385,17 @@
 		"10",
 		"18",
 		"26",
-		"11"
+		"11",
+		"27"
 	],
-	"finishPositionsCount": "15",
-	"finishes": "15",
-	"points": "2030"
+	"finishPositionsCount": "16",
+	"finishes": "16",
+	"points": "2115"
 },
 {
 	"driverName": "D Earnhardt Jr.",
 	"carNumber": "8",
-	"lapsCompleted": "2461",
+	"lapsCompleted": "2661",
 	"lapsLed": "33",
 	"dnfs": "1",
 	"racesLed": "3",
@@ -398,10 +414,11 @@
 		"18",
 		"23",
 		"16",
-		"4"
+		"4",
+		"13"
 	],
-	"startPositionsCount": "15",
-	"starts": "15",
+	"startPositionsCount": "16",
+	"starts": "16",
 	"finishPositions":[
 		"21",
 		"40",
@@ -417,11 +434,12 @@
 		"14",
 		"5",
 		"2",
-		"5"
+		"5",
+		"4"
 	],
-	"finishPositionsCount": "15",
-	"finishes": "15",
-	"points": "2180"
+	"finishPositionsCount": "16",
+	"finishes": "16",
+	"points": "2380"
 },
 {
 	  "driverName": "D Goward",
@@ -445,9 +463,10 @@
 		"0",
 		"0",
 		"37",
+		"0",
 		"0"
 	],
-	  "startPositionsCount": "15",
+	  "startPositionsCount": "16",
 	  "starts": "2",
 	"finishPositions":[
 		"0",
@@ -464,16 +483,17 @@
 		"0",
 		"0",
 		"38",
+		"0",
 		"0"
 	],
-  	"finishPositionsCount": "15",
+  	"finishPositionsCount": "16",
 	  "finishes": "2",
 	  "points": "35"
 },
 {
 	"driverName": "D Jarrett",
 	"carNumber": "88",
-	"lapsCompleted": "2091",
+	"lapsCompleted": "2291",
 	"lapsLed": "24",
 	"dnfs": "2",
 	"racesLed": "2",
@@ -492,10 +512,11 @@
 		"10",
 		"5",
 		"40",
-		"22"
+		"22",
+		"12"
 	],
-	"startPositionsCount": "15",
-	"starts": "15",
+	"startPositionsCount": "16",
+	"starts": "16",
 	"finishPositions":[
 		"1",
 		"42",
@@ -511,11 +532,12 @@
 		"24",
 		"2",
 		"27",
-		"16"
+		"16",
+		"11"
 	],
-	"finishPositionsCount": "15",
-	"finishes": "15",
-	"points": "1955"
+	"finishPositionsCount": "16",
+	"finishes": "16",
+	"points": "2120"
 },
 {
 	  "driverName": "D Sweet",
@@ -539,9 +561,10 @@
 		"0",
 		"0",
 		"38",
+		"0",
 		"0"
 	],
-	  "startPositionsCount": "15",
+	  "startPositionsCount": "16",
 	  "starts": "1",
 	"finishPositions":[
 		"0",
@@ -558,16 +581,17 @@
 		"0",
 		"0",
 		"35",
+		"0",
 		"0"
 	],
-  	"finishPositionsCount": "15",
+  	"finishPositionsCount": "16",
 	  "finishes": "1",
 	  "points": "35"
 },
 {
 	"driverName": "E Sadler",
 	"carNumber": "38",
-	"lapsCompleted": "2473",
+	"lapsCompleted": "2673",
 	"lapsLed": "0",
 	"dnfs": "0",
 	"racesLed": "0",
@@ -586,10 +610,11 @@
 		"26",
 		"17",
 		"13",
-		"32"
+		"32",
+		"35"
 	],
-	"startPositionsCount": "15",
-	"starts": "15",
+	"startPositionsCount": "16",
+	"starts": "16",
 	"finishPositions":[
 		"4",
 		"29",
@@ -605,16 +630,17 @@
 		"37",
 		"29",
 		"39",
-		"27"
+		"27",
+		"9"
 	],
-	"finishPositionsCount": "15",
-	"finishes": "15",
-	"points": "1280"
+	"finishPositionsCount": "16",
+	"finishes": "16",
+	"points": "1455"
 },
 {
 	"driverName": "G Biffle",
 	"carNumber": "16",
-	"lapsCompleted": "2421",
+	"lapsCompleted": "2621",
 	"lapsLed": "2",
 	"dnfs": "1",
 	"racesLed": "1",
@@ -633,10 +659,11 @@
 		"29",
 		"32",
 		"14",
-		"12"
+		"12",
+		"5"
 	],
-	"startPositionsCount": "15",
-	"starts": "15",
+	"startPositionsCount": "16",
+	"starts": "16",
 	"finishPositions":[
 		"3",
 		"17",
@@ -652,11 +679,12 @@
 		"8",
 		"15",
 		"31",
-		"33"
+		"33",
+		"12"
 	],
-	"finishPositionsCount": "15",
-	"finishes": "15",
-	"points": "1735"
+	"finishPositionsCount": "16",
+	"finishes": "16",
+	"points": "1895"
 },
 {
 	  "driverName": "G Grimshaw",
@@ -680,9 +708,10 @@
 		"38",
 		"0",
 		"0",
+		"0",
 		"0"
 	],
-	  "startPositionsCount": "15",
+	  "startPositionsCount": "16",
 	  "starts": "1",
 	"finishPositions":[
 		"0",
@@ -699,9 +728,10 @@
 		"42",
 		"0",
 		"0",
+		"0",
 		"0"
 	],
-  	"finishPositionsCount": "15",
+  	"finishPositionsCount": "16",
 	  "finishes": "1",
 	  "points": "10"
 },
@@ -727,9 +757,10 @@
 		"0",
 		"0",
 		"32",
+		"0",
 		"0"
 	],
-	  "startPositionsCount": "15",
+	  "startPositionsCount": "16",
 	  "starts": "2",
 	"finishPositions":[
 		"0",
@@ -746,9 +777,10 @@
 		"0",
 		"0",
 		"32",
+		"0",
 		"0"
 	],
-  	"finishPositionsCount": "15",
+  	"finishPositionsCount": "16",
 	  "finishes": "2",
 	  "points": "90"
 },
@@ -774,9 +806,10 @@
 		"0",
 		"0",
 		"0",
+		"0",
 		"0"
 	],
-	  "startPositionsCount": "15",
+	  "startPositionsCount": "16",
 	  "starts": "1",
 	"finishPositions":[
 		"0",
@@ -793,18 +826,19 @@
 		"0",
 		"0",
 		"0",
+		"0",
 		"0"
 	],
-  	"finishPositionsCount": "15",
+  	"finishPositionsCount": "16",
 	  "finishes": "1",
 	  "points": "70"
 },
 {
 	"driverName": "H Sadler",
 	"carNumber": "02",
-	"lapsCompleted": "1457",
+	"lapsCompleted": "1577",
 	"lapsLed": "0",
-	"dnfs": "2",
+	"dnfs": "3",
 	"racesLed": "0",
 	"startPositions":[
 		"39",
@@ -821,10 +855,11 @@
 		"41",
 		"41",
 		"26",
-		"38"
+		"38",
+		"32"
 	],
-	"startPositionsCount": "15",
-	"starts": "10",
+	"startPositionsCount": "16",
+	"starts": "11",
 	"finishPositions":[
 		"11",
 		"34",
@@ -840,16 +875,17 @@
 		"35",
 		"37",
 		"34",
-		"35"
+		"35",
+		"41"
 	],
-	"finishPositionsCount": "15",
-	"finishes": "10",
-	"points": "515"
+	"finishPositionsCount": "16",
+	"finishes": "11",
+	"points": "530"
 },
 {
 	"driverName": "J Andretti",
 	"carNumber": "43",
-	"lapsCompleted": "2439",
+	"lapsCompleted": "2638",
 	"lapsLed": "2",
 	"dnfs": "1",
 	"racesLed": "1",
@@ -868,10 +904,11 @@
 		"27",
 		"4",
 		"20",
-		"39"
+		"39",
+		"41"
 	],
-	"startPositionsCount": "15",
-	"starts": "15",
+	"startPositionsCount": "16",
+	"starts": "16",
 	"finishPositions":[
 		"38",
 		"28",
@@ -887,11 +924,12 @@
 		"26",
 		"13",
 		"12",
-		"22"
+		"22",
+		"19"
 	],
-	"finishPositionsCount": "15",
-	"finishes": "15",
-	"points": "1640"
+	"finishPositionsCount": "16",
+	"finishes": "16",
+	"points": "1765"
 },
 {
 	  "driverName": "J Balkan",
@@ -915,9 +953,10 @@
 		"0",
 		"43",
 		"0",
+		"0",
 		"0"
 	],
-	  "startPositionsCount": "15",
+	  "startPositionsCount": "16",
 	  "starts": "3",
 	"finishPositions":[
 		"33",
@@ -934,9 +973,10 @@
 		"0",
 		"42",
 		"0",
+		"0",
 		"0"
 	],
-  	"finishPositionsCount": "15",
+  	"finishPositionsCount": "16",
 	  "finishes": "3",
 	  "points": "95"
 },
@@ -962,9 +1002,10 @@
 		"21",
 		"0",
 		"0",
+		"0",
 		"0"
 	],
-	  "startPositionsCount": "15",
+	  "startPositionsCount": "16",
 	  "starts": "3",
 	"finishPositions":[
 		"0",
@@ -981,18 +1022,19 @@
 		"34",
 		"0",
 		"0",
+		"0",
 		"0"
 	],
-  	"finishPositionsCount": "15",
+  	"finishPositionsCount": "16",
 	  "finishes": "3",
 	  "points": "195"
 },
 {
 	"driverName": "J Benson",
 	"carNumber": "10",
-	"lapsCompleted": "2298",
+	"lapsCompleted": "2426",
 	"lapsLed": "0",
-	"dnfs": "3",
+	"dnfs": "4",
 	"racesLed": "0",
 	"startPositions":[
 		"28",
@@ -1009,10 +1051,11 @@
 		"11",
 		"11",
 		"12",
-		"6"
+		"6",
+		"36"
 	],
-	"startPositionsCount": "15",
-	"starts": "15",
+	"startPositionsCount": "16",
+	"starts": "16",
 	"finishPositions":[
 		"40",
 		"18",
@@ -1028,16 +1071,17 @@
 		"9",
 		"32",
 		"15",
-		"14"
+		"14",
+		"40"
 	],
-	"finishPositionsCount": "15",
-	"finishes": "15",
-	"points": "1805"
+	"finishPositionsCount": "16",
+	"finishes": "16",
+	"points": "1825"
 },
 {
 	"driverName": "J Burton",
 	"carNumber": "99",
-	"lapsCompleted": "2344",
+	"lapsCompleted": "2544",
 	"lapsLed": "107",
 	"dnfs": "2",
 	"racesLed": "6",
@@ -1056,10 +1100,11 @@
 		"1",
 		"38",
 		"11",
-		"3"
+		"3",
+		"40"
 	],
-	"startPositionsCount": "15",
-	"starts": "15",
+	"startPositionsCount": "16",
+	"starts": "16",
 	"finishPositions":[
 		"6",
 		"11",
@@ -1075,19 +1120,20 @@
 		"19",
 		"40",
 		"3",
-		"12"
+		"12",
+		"2"
 	],
-	"finishPositionsCount": "15",
-	"finishes": "15",
-	"points": "2275"
+	"finishPositionsCount": "16",
+	"finishes": "16",
+	"points": "2485"
 },
 {
 	"driverName": "J Gordon",
 	"carNumber": "24",
-	"lapsCompleted": "2262",
-	"lapsLed": "62",
+	"lapsCompleted": "2462",
+	"lapsLed": "70",
 	"dnfs": "3",
-	"racesLed": "7",
+	"racesLed": "8",
 	"startPositions":[
 		"14",
 		"4",
@@ -1103,10 +1149,11 @@
 		"17",
 		"19",
 		"2",
-		"9"
+		"9",
+		"10"
 	],
-	"startPositionsCount": "15",
-	"starts": "15",
+	"startPositionsCount": "16",
+	"starts": "16",
 	"finishPositions":[
 		"37",
 		"10",
@@ -1122,16 +1169,17 @@
 		"2",
 		"23",
 		"24",
-		"13"
+		"13",
+		"3"
 	],
-	"finishPositionsCount": "15",
-	"finishes": "15",
-	"points": "1925"
+	"finishPositionsCount": "16",
+	"finishes": "16",
+	"points": "2135"
 },
 {
 	"driverName": "J Green",
 	"carNumber": "30",
-	"lapsCompleted": "2230",
+	"lapsCompleted": "2430",
 	"lapsLed": "2",
 	"dnfs": "1",
 	"racesLed": "1",
@@ -1150,10 +1198,11 @@
 		"19",
 		"15",
 		"21",
-		"5"
+		"5",
+		"14"
 	],
-	"startPositionsCount": "15",
-	"starts": "15",
+	"startPositionsCount": "16",
+	"starts": "16",
 	"finishPositions":[
 		"24",
 		"25",
@@ -1169,11 +1218,12 @@
 		"18",
 		"21",
 		"9",
+		"7",
 		"7"
 	],
-	"finishPositionsCount": "15",
-	"finishes": "15",
-	"points": "1625"
+	"finishPositionsCount": "16",
+	"finishes": "16",
+	"points": "1810"
 },
 {
 	  "driverName": "J Haley",
@@ -1197,9 +1247,10 @@
 		"0",
 		"0",
 		"39",
+		"0",
 		"0"
 	],
-	  "startPositionsCount": "15",
+	  "startPositionsCount": "16",
 	  "starts": "4",
 	"finishPositions":[
 		"0",
@@ -1216,9 +1267,10 @@
 		"0",
 		"0",
 		"40",
+		"0",
 		"0"
 	],
-  	"finishPositionsCount": "15",
+  	"finishPositionsCount": "16",
 	  "finishes": "4",
 	  "points": "115"
 },
@@ -1244,9 +1296,10 @@
 		"0",
 		"0",
 		"0",
+		"0",
 		"0"
 	],
-	  "startPositionsCount": "15",
+	  "startPositionsCount": "16",
 	  "starts": "1",
 	"finishPositions":[
 		"0",
@@ -1263,16 +1316,17 @@
 		"0",
 		"0",
 		"0",
+		"0",
 		"0"
 	],
-  	"finishPositionsCount": "15",
+  	"finishPositionsCount": "16",
 	  "finishes": "1",
 	  "points": "5"
 },
 {
 	"driverName": "J Johnson",
 	"carNumber": "48",
-	"lapsCompleted": "2119",
+	"lapsCompleted": "2319",
 	"lapsLed": "59",
 	"dnfs": "2",
 	"racesLed": "4",
@@ -1291,10 +1345,11 @@
 		"4",
 		"1",
 		"15",
-		"10"
+		"10",
+		"20"
 	],
-	"startPositionsCount": "15",
-	"starts": "15",
+	"startPositionsCount": "16",
+	"starts": "16",
 	"finishPositions":[
 		"9",
 		"21",
@@ -1310,11 +1365,12 @@
 		"25",
 		"3",
 		"41",
-		"8"
+		"8",
+		"6"
 	],
-	"finishPositionsCount": "15",
-	"finishes": "15",
-	"points": "1950"
+	"finishPositionsCount": "16",
+	"finishes": "16",
+	"points": "2140"
 },
 {
 	  "driverName": "J Lang",
@@ -1338,9 +1394,10 @@
 		"0",
 		"0",
 		"0",
+		"0",
 		"0"
 	],
-	  "startPositionsCount": "15",
+	  "startPositionsCount": "16",
 	  "starts": "2",
 	"finishPositions":[
 		"0",
@@ -1357,19 +1414,20 @@
 		"0",
 		"0",
 		"0",
+		"0",
 		"0"
 	],
-  	"finishPositionsCount": "15",
+  	"finishPositionsCount": "16",
 	  "finishes": "2",
 	  "points": "35"
 },
 {
-	  "driverName": "J Masella",
-	  "carNumber": "191",
-	  "lapsCompleted": "210",
-	  "lapsLed": "0",
-	  "dnfs": "0",
-	  "racesLed": "0",
+	"driverName": "J Masella",
+	"carNumber": "191",
+	"lapsCompleted": "409",
+	"lapsLed": "0",
+	"dnfs": "0",
+	"racesLed": "0",
 	"startPositions":[
 		"0",
 		"0",
@@ -1385,10 +1443,11 @@
 		"32",
 		"0",
 		"0",
-		"0"
+		"0",
+		"29"
 	],
-	  "startPositionsCount": "15",
-	  "starts": "1",
+	"startPositionsCount": "16",
+	"starts": "2",
 	"finishPositions":[
 		"0",
 		"0",
@@ -1404,16 +1463,17 @@
 		"41",
 		"0",
 		"0",
-		"0"
+		"0",
+		"31"
 	],
-  	"finishPositionsCount": "15",
-	  "finishes": "1",
-	  "points": "15"
+	"finishPositionsCount": "16",
+	"finishes": "2",
+	"points": "80"
 },
 {
 	"driverName": "J Mayfield",
 	"carNumber": "19",
-	"lapsCompleted": "2416",
+	"lapsCompleted": "2616",
 	"lapsLed": "24",
 	"dnfs": "1",
 	"racesLed": "2",
@@ -1432,10 +1492,11 @@
 		"3",
 		"28",
 		"4",
-		"28"
+		"28",
+		"19"
 	],
-	"startPositionsCount": "15",
-	"starts": "14",
+	"startPositionsCount": "16",
+	"starts": "15",
 	"finishPositions":[
 		"18",
 		"30",
@@ -1451,16 +1512,17 @@
 		"13",
 		"12",
 		"16",
-		"20"
+		"20",
+		"8"
 	],
-	"finishPositionsCount": "15",
-	"finishes": "14",
-	"points": "1590"
+	"finishPositionsCount": "16",
+	"finishes": "15",
+	"points": "1770"
 },
 {
 	"driverName": "J Nadeau",
 	"carNumber": "01",
-	"lapsCompleted": "2234",
+	"lapsCompleted": "2433",
 	"lapsLed": "0",
 	"dnfs": "2",
 	"racesLed": "0",
@@ -1479,10 +1541,11 @@
 		"9",
 		"8",
 		"18",
-		"31"
+		"31",
+		"2"
 	],
-	"startPositionsCount": "15",
-	"starts": "15",
+	"startPositionsCount": "16",
+	"starts": "16",
 	"finishPositions":[
 		"26",
 		"19",
@@ -1498,16 +1561,17 @@
 		"27",
 		"36",
 		"37",
-		"40"
+		"40",
+		"28"
 	],
-	"finishPositionsCount": "15",
-	"finishes": "15",
-	"points": "1110"
+	"finishPositionsCount": "16",
+	"finishes": "16",
+	"points": "1190"
 },
 {
 	"driverName": "J Nemechek",
 	"carNumber": "25",
-	"lapsCompleted": "1894",
+	"lapsCompleted": "2093",
 	"lapsLed": "0",
 	"dnfs": "1",
 	"racesLed": "0",
@@ -1526,10 +1590,11 @@
 		"20",
 		"40",
 		"0",
-		"29"
+		"29",
+		"37"
 	],
-	"startPositionsCount": "15",
-	"starts": "13",
+	"startPositionsCount": "16",
+	"starts": "14",
 	"finishPositions":[
 		"25",
 		"27",
@@ -1545,11 +1610,12 @@
 		"40",
 		"30",
 		"0",
-		"38"
+		"38",
+		"29"
 	],
-	"finishPositionsCount": "15",
-	"finishes": "13",
-	"points": "845"
+	"finishPositionsCount": "16",
+	"finishes": "14",
+	"points": "920"
 },
 {
 	  "driverName": "J Salerno",
@@ -1573,9 +1639,10 @@
 		"39",
 		"0",
 		"0",
+		"0",
 		"0"
 	],
-	  "startPositionsCount": "15",
+	  "startPositionsCount": "16",
 	  "starts": "1",
 	"finishPositions":[
 		"0",
@@ -1592,19 +1659,20 @@
 		"43",
 		"0",
 		"0",
+		"0",
 		"0"
 	],
-  	"finishPositionsCount": "15",
+  	"finishPositionsCount": "16",
 	  "finishes": "1",
 	  "points": "5"
 },
 {
-	  "driverName": "J Spencer",
-	  "carNumber": "7",
-	  "lapsCompleted": "2274",
-	  "lapsLed": "3",
-	  "dnfs": "0",
-	  "racesLed": "1",
+	"driverName": "J Spencer",
+	"carNumber": "7",
+	"lapsCompleted": "2474",
+	"lapsLed": "3",
+	"dnfs": "0",
+	"racesLed": "1",
 	"startPositions":[
 		"23",
 		"7",
@@ -1620,10 +1688,11 @@
 		"43",
 		"12",
 		"33",
-		"0"
+		"0",
+		"25"
 	],
-	  "startPositionsCount": "15",
-	  "starts": "14",
+	"startPositionsCount": "16",
+	"starts": "15",
 	"finishPositions":[
 		"29",
 		"32",
@@ -1639,16 +1708,17 @@
 		"36",
 		"25",
 		"11",
-		"0"
+		"0",
+		"14"
 	],
-  	"finishPositionsCount": "15",
-	  "finishes": "14",
-	  "points": "1200"
+	"finishPositionsCount": "16",
+	"finishes": "15",
+	"points": "1350"
 },
 {
 	"driverName": "J Sprague",
 	"carNumber": "0",
-	"lapsCompleted": "2473",
+	"lapsCompleted": "2672",
 	"lapsLed": "0",
 	"dnfs": "0",
 	"racesLed": "0",
@@ -1667,10 +1737,11 @@
 		"22",
 		"34",
 		"24",
-		"23"
+		"23",
+		"33"
 	],
-	"startPositionsCount": "15",
-	"starts": "15",
+	"startPositionsCount": "16",
+	"starts": "16",
 	"finishPositions":[
 		"5",
 		"7",
@@ -1686,19 +1757,20 @@
 		"28",
 		"17",
 		"36",
-		"34"
+		"34",
+		"30"
 	],
-	"finishPositionsCount": "15",
-	"finishes": "15",
-	"points": "1540"
+	"finishPositionsCount": "16",
+	"finishes": "16",
+	"points": "1610"
 },
 {
 	"driverName": "K Busch",
 	"carNumber": "97",
-	"lapsCompleted": "2444",
-	"lapsLed": "537",
+	"lapsCompleted": "2644",
+	"lapsLed": "622",
 	"dnfs": "1",
-	"racesLed": "10",
+	"racesLed": "11",
 	"startPositions":[
 		"2",
 		"2",
@@ -1714,10 +1786,11 @@
 		"8",
 		"10",
 		"8",
-		"1"
+		"1",
+		"26"
 	],
-	"startPositionsCount": "15",
-	"starts": "15",
+	"startPositionsCount": "16",
+	"starts": "16",
 	"finishPositions":[
 		"34",
 		"16",
@@ -1733,16 +1806,17 @@
 		"4",
 		"1",
 		"5",
-		"2"
+		"2",
+		"1"
 	],
-	"finishPositionsCount": "15",
-	"finishes": "15",
-	"points": "2725"
+	"finishPositionsCount": "16",
+	"finishes": "16",
+	"points": "2945"
 },
 {
 	"driverName": "K Harvick",
 	"carNumber": "29",
-	"lapsCompleted": "2390",
+	"lapsCompleted": "2587",
 	"lapsLed": "3",
 	"dnfs": "1",
 	"racesLed": "1",
@@ -1761,10 +1835,11 @@
 		"35",
 		"13",
 		"36",
-		"40"
+		"40",
+		"28"
 	],
-	"startPositionsCount": "15",
-	"starts": "15",
+	"startPositionsCount": "16",
+	"starts": "16",
 	"finishPositions":[
 		"28",
 		"24",
@@ -1780,11 +1855,12 @@
 		"21",
 		"16",
 		"29",
-		"24"
+		"24",
+		"37"
 	],
-	"finishPositionsCount": "15",
-	"finishes": "15",
-	"points": "1360"
+	"finishPositionsCount": "16",
+	"finishes": "16",
+	"points": "1395"
 },
 {
 	  "driverName": "K Iannarelli",
@@ -1808,9 +1884,10 @@
 		"0",
 		"0",
 		"0",
+		"0",
 		"0"
 	],
-	  "startPositionsCount": "15",
+	  "startPositionsCount": "16",
 	  "starts": "2",
 	"finishPositions":[
 		"0",
@@ -1827,16 +1904,17 @@
 		"0",
 		"0",
 		"0",
+		"0",
 		"0"
 	],
-  	"finishPositionsCount": "15",
+  	"finishPositionsCount": "16",
 	  "finishes": "2",
 	  "points": "160"
 },
 {
 	"driverName": "K Petty",
 	"carNumber": "45",
-	"lapsCompleted": "2341",
+	"lapsCompleted": "2540",
 	"lapsLed": "8",
 	"dnfs": "2",
 	"racesLed": "2",
@@ -1855,10 +1933,11 @@
 		"37",
 		"29",
 		"25",
-		"21"
+		"21",
+		"15"
 	],
-	"startPositionsCount": "15",
-	"starts": "15",
+	"startPositionsCount": "16",
+	"starts": "16",
 	"finishPositions":[
 		"41",
 		"9",
@@ -1874,16 +1953,17 @@
 		"23",
 		"43",
 		"7",
-		"17"
+		"17",
+		"22"
 	],
-	"finishPositionsCount": "15",
-	"finishes": "15",
-	"points": "1395"
+	"finishPositionsCount": "16",
+	"finishes": "16",
+	"points": "1505"
 },
 {
 	"driverName": "K Schrader",
 	"carNumber": "49",
-	"lapsCompleted": "2037",
+	"lapsCompleted": "2235",
 	"lapsLed": "0",
 	"dnfs": "2",
 	"racesLed": "0",
@@ -1902,10 +1982,11 @@
 		"0",
 		"0",
 		"34",
-		"14"
+		"14",
+		"22"
 	],
-	"startPositionsCount": "15",
-	"starts": "13",
+	"startPositionsCount": "16",
+	"starts": "14",
 	"finishPositions":[
 		"14",
 		"33",
@@ -1921,19 +2002,20 @@
 		"0",
 		"0",
 		"22",
-		"37"
+		"37",
+		"32"
 	],
-	"finishPositionsCount": "15",
-	"finishes": "13",
-	"points": "775"
+	"finishPositionsCount": "16",
+	"finishes": "14",
+	"points": "835"
 },
 {
-	  "driverName": "K Wallace",
-	  "carNumber": "23",
-	  "lapsCompleted": "1943",
-	  "lapsLed": "0",
-	  "dnfs": "1",
-	  "racesLed": "0",
+	"driverName": "K Wallace",
+	"carNumber": "23",
+	"lapsCompleted": "2141",
+	"lapsLed": "0",
+	"dnfs": "1",
+	"racesLed": "0",
 	"startPositions":[
 		"0",
 		"38",
@@ -1949,10 +2031,11 @@
 		"24",
 		"21",
 		"41",
-		"0"
+		"0",
+		"23"
 	],
-	  "startPositionsCount": "15",
-	  "starts": "11",
+	"startPositionsCount": "16",
+	"starts": "12",
 	"finishPositions":[
 		"0",
 		"23",
@@ -1968,18 +2051,19 @@
 		"39",
 		"27",
 		"30",
-		"0"
+		"0",
+		"33"
 	],
-  	"finishPositionsCount": "15",
-	  "finishes": "11",
-	  "points": "780"
+	"finishPositionsCount": "16",
+	"finishes": "12",
+	"points": "835"
 },
 {
 	"driverName": "M Kenseth",
 	"carNumber": "17",
-	"lapsCompleted": "2443",
+	"lapsCompleted": "2573",
 	"lapsLed": "49",
-	"dnfs": "1",
+	"dnfs": "2",
 	"racesLed": "3",
 	"startPositions":[
 		"17",
@@ -1996,10 +2080,11 @@
 		"15",
 		"18",
 		"22",
-		"13"
+		"13",
+		"6"
 	],
-	"startPositionsCount": "15",
-	"starts": "15",
+	"startPositionsCount": "16",
+	"starts": "16",
 	"finishPositions":[
 		"35",
 		"13",
@@ -2015,11 +2100,12 @@
 		"5",
 		"10",
 		"6",
-		"10"
+		"10",
+		"39"
 	],
-	"finishPositionsCount": "15",
-	"finishes": "15",
-	"points": "2310"
+	"finishPositionsCount": "16",
+	"finishes": "16",
+	"points": "2335"
 },
 {
 	  "driverName": "M La Terza",
@@ -2043,9 +2129,10 @@
 		"0",
 		"0",
 		"0",
+		"0",
 		"0"
 	],
-	  "startPositionsCount": "15",
+	  "startPositionsCount": "16",
 	  "starts": "1",
 	"finishPositions":[
 		"0",
@@ -2062,19 +2149,20 @@
 		"0",
 		"0",
 		"0",
+		"0",
 		"0"
 	],
-  	"finishPositionsCount": "15",
+  	"finishPositionsCount": "16",
 	  "finishes": "1",
 	  "points": "15"
 },
 {
 	"driverName": "M Martin",
 	"carNumber": "6",
-	"lapsCompleted": "2440",
-	"lapsLed": "221",
+	"lapsCompleted": "2640",
+	"lapsLed": "231",
 	"dnfs": "1",
-	"racesLed": "7",
+	"racesLed": "8",
 	"startPositions":[
 		"11",
 		"11",
@@ -2090,10 +2178,11 @@
 		"5",
 		"20",
 		"6",
-		"7"
+		"7",
+		"8"
 	],
-	"startPositionsCount": "15",
-	"starts": "15",
+	"startPositionsCount": "16",
+	"starts": "16",
 	"finishPositions":[
 		"36",
 		"3",
@@ -2109,19 +2198,20 @@
 		"1",
 		"28",
 		"1",
-		"19"
+		"19",
+		"5"
 	],
-	"finishPositionsCount": "15",
-	"finishes": "15",
-	"points": "2185"
+	"finishPositionsCount": "16",
+	"finishes": "16",
+	"points": "2385"
 },
 {
-	"driverName": "M Skinner",
-	"carNumber": "4",
-	"lapsCompleted": "2320",
-	"lapsLed": "0",
-	"dnfs": "2",
-	"racesLed": "0",
+	  "driverName": "M Skinner",
+	  "carNumber": "4",
+	  "lapsCompleted": "2320",
+	  "lapsLed": "0",
+	  "dnfs": "2",
+	  "racesLed": "0",
 	"startPositions":[
 		"38",
 		"43",
@@ -2137,10 +2227,11 @@
 		"34",
 		"42",
 		"23",
-		"36"
+		"36",
+		"0"
 	],
-	"startPositionsCount": "15",
-	"starts": "15",
+	  "startPositionsCount": "16",
+	  "starts": "15",
 	"finishPositions":[
 		"20",
 		"31",
@@ -2156,19 +2247,20 @@
 		"31",
 		"26",
 		"33",
-		"28"
+		"28",
+		"0"
 	],
-	"finishPositionsCount": "15",
-	"finishes": "15",
-	"points": "1005"
+  	"finishPositionsCount": "16",
+	  "finishes": "15",
+	  "points": "1005"
 },
 {
-	  "driverName": "M Stackpole",
-	  "carNumber": "190",
-	  "lapsCompleted": "310",
-	  "lapsLed": "0",
-	  "dnfs": "1",
-	  "racesLed": "0",
+	"driverName": "M Stackpole",
+	"carNumber": "190",
+	"lapsCompleted": "508",
+	"lapsLed": "0",
+	"dnfs": "1",
+	"racesLed": "0",
 	"startPositions":[
 		"0",
 		"0",
@@ -2184,10 +2276,11 @@
 		"0",
 		"39",
 		"0",
-		"0"
+		"0",
+		"42"
 	],
-	  "startPositionsCount": "15",
-	  "starts": "3",
+	"startPositionsCount": "16",
+	"starts": "4",
 	"finishPositions":[
 		"0",
 		"0",
@@ -2203,16 +2296,17 @@
 		"0",
 		"39",
 		"0",
-		"0"
+		"0",
+		"34"
 	],
-  	"finishPositionsCount": "15",
-	  "finishes": "3",
-	  "points": "85"
+	"finishPositionsCount": "16",
+	"finishes": "4",
+	"points": "135"
 },
 {
 	"driverName": "M Waltrip",
 	"carNumber": "15",
-	"lapsCompleted": "2098",
+	"lapsCompleted": "2297",
 	"lapsLed": "6",
 	"dnfs": "1",
 	"racesLed": "2",
@@ -2231,10 +2325,11 @@
 		"42",
 		"26",
 		"27",
-		"27"
+		"27",
+		"43"
 	],
-	"startPositionsCount": "15",
-	"starts": "15",
+	"startPositionsCount": "16",
+	"starts": "16",
 	"finishPositions":[
 		"7",
 		"36",
@@ -2250,11 +2345,12 @@
 		"15",
 		"6",
 		"0",
-		"3"
+		"3",
+		"26"
 	],
-	"finishPositionsCount": "15",
-	"finishes": "14",
-	"points": "1930"
+	"finishPositionsCount": "16",
+	"finishes": "15",
+	"points": "2020"
 },
 {
 	  "driverName": "P Inglis",
@@ -2278,9 +2374,10 @@
 		"0",
 		"0",
 		"0",
+		"0",
 		"0"
 	],
-	  "startPositionsCount": "15",
+	  "startPositionsCount": "16",
 	  "starts": "1",
 	"finishPositions":[
 		"16",
@@ -2297,16 +2394,17 @@
 		"0",
 		"0",
 		"0",
+		"0",
 		"0"
 	],
-  	"finishPositionsCount": "15",
+  	"finishPositionsCount": "16",
 	  "finishes": "1",
 	  "points": "140"
 },
 {
 	"driverName": "R Craven",
 	"carNumber": "32",
-	"lapsCompleted": "2241",
+	"lapsCompleted": "2440",
 	"lapsLed": "10",
 	"dnfs": "2",
 	"racesLed": "2",
@@ -2325,10 +2423,11 @@
 		"7",
 		"24",
 		"28",
-		"25"
+		"25",
+		"17"
 	],
-	"startPositionsCount": "15",
-	"starts": "15",
+	"startPositionsCount": "16",
+	"starts": "16",
 	"finishPositions":[
 		"30",
 		"14",
@@ -2344,16 +2443,17 @@
 		"38",
 		"33",
 		"10",
-		"21"
+		"21",
+		"18"
 	],
-	"finishPositionsCount": "15",
-	"finishes": "15",
-	"points": "1470"
+	"finishPositionsCount": "16",
+	"finishes": "16",
+	"points": "1600"
 },
 {
 	"driverName": "R Gordon",
 	"carNumber": "31",
-	"lapsCompleted": "2246",
+	"lapsCompleted": "2445",
 	"lapsLed": "5",
 	"dnfs": "3",
 	"racesLed": "1",
@@ -2372,10 +2472,11 @@
 		"25",
 		"2",
 		"43",
-		"8"
+		"8",
+		"34"
 	],
-	"startPositionsCount": "15",
-	"starts": "15",
+	"startPositionsCount": "16",
+	"starts": "16",
 	"finishPositions":[
 		"42",
 		"39",
@@ -2391,16 +2492,17 @@
 		"20",
 		"34",
 		"18",
-		"26"
+		"26",
+		"23"
 	],
-	"finishPositionsCount": "15",
-	"finishes": "15",
-	"points": "1360"
+	"finishPositionsCount": "16",
+	"finishes": "16",
+	"points": "1465"
 },
 {
 	"driverName": "R Newman",
 	"carNumber": "12",
-	"lapsCompleted": "2483",
+	"lapsCompleted": "2682",
 	"lapsLed": "36",
 	"dnfs": "0",
 	"racesLed": "6",
@@ -2419,10 +2521,11 @@
 		"13",
 		"7",
 		"42",
-		"16"
+		"16",
+		"30"
 	],
-	"startPositionsCount": "15",
-	"starts": "15",
+	"startPositionsCount": "16",
+	"starts": "16",
 	"finishPositions":[
 		"2",
 		"4",
@@ -2438,16 +2541,17 @@
 		"17",
 		"24",
 		"21",
-		"4"
+		"4",
+		"20"
 	],
-	"finishPositionsCount": "15",
-	"finishes": "15",
-	"points": "2390"
+	"finishPositionsCount": "16",
+	"finishes": "16",
+	"points": "2510"
 },
 {
 	"driverName": "R Pantano",
 	"carNumber": "155",
-	"lapsCompleted": "522",
+	"lapsCompleted": "720",
 	"lapsLed": "0",
 	"dnfs": "0",
 	"racesLed": "0",
@@ -2466,10 +2570,11 @@
 		"0",
 		"27",
 		"0",
-		"35"
+		"35",
+		"24"
 	],
-	"startPositionsCount": "15",
-	"starts": "3",
+	"startPositionsCount": "16",
+	"starts": "4",
 	"finishPositions":[
 		"0",
 		"0",
@@ -2485,16 +2590,17 @@
 		"0",
 		"38",
 		"0",
+		"36",
 		"36"
 	],
-	"finishPositionsCount": "15",
-	"finishes": "3",
-	"points": "150"
+	"finishPositionsCount": "16",
+	"finishes": "4",
+	"points": "190"
 },
 {
 	"driverName": "R Rudd",
 	"carNumber": "21",
-	"lapsCompleted": "2437",
+	"lapsCompleted": "2637",
 	"lapsLed": "47",
 	"dnfs": "1",
 	"racesLed": "4",
@@ -2513,10 +2619,11 @@
 		"12",
 		"6",
 		"17",
-		"18"
+		"18",
+		"21"
 	],
-	"startPositionsCount": "15",
-	"starts": "15",
+	"startPositionsCount": "16",
+	"starts": "16",
 	"finishPositions":[
 		"17",
 		"1",
@@ -2532,16 +2639,17 @@
 		"7",
 		"8",
 		"4",
-		"18"
+		"18",
+		"16"
 	],
-	"finishPositionsCount": "15",
-	"finishes": "15",
-	"points": "2170"
+	"finishPositionsCount": "16",
+	"finishes": "16",
+	"points": "2310"
 },
 {
 	"driverName": "R Wallace",
 	"carNumber": "2",
-	"lapsCompleted": "2291",
+	"lapsCompleted": "2490",
 	"lapsLed": "113",
 	"dnfs": "1",
 	"racesLed": "4",
@@ -2560,10 +2668,11 @@
 		"33",
 		"9",
 		"9",
-		"19"
+		"19",
+		"4"
 	],
-	"startPositionsCount": "15",
-	"starts": "15",
+	"startPositionsCount": "16",
+	"starts": "16",
 	"finishPositions":[
 		"8",
 		"6",
@@ -2579,11 +2688,12 @@
 		"22",
 		"4",
 		"8",
-		"15"
+		"15",
+		"17"
 	],
-	"finishPositionsCount": "15",
-	"finishes": "15",
-	"points": "2375"
+	"finishPositionsCount": "16",
+	"finishes": "16",
+	"points": "2510"
 },
 {
 	  "driverName": "R Young",
@@ -2607,9 +2717,10 @@
 		"0",
 		"0",
 		"0",
+		"0",
 		"0"
 	],
-	  "startPositionsCount": "15",
+	  "startPositionsCount": "16",
 	  "starts": "1",
 	"finishPositions":[
 		"0",
@@ -2626,18 +2737,19 @@
 		"0",
 		"0",
 		"0",
+		"0",
 		"0"
 	],
-  	"finishPositionsCount": "15",
+  	"finishPositionsCount": "16",
 	  "finishes": "1",
 	  "points": "45"
 },
 {
 	"driverName": "S Park",
 	"carNumber": "1",
-	"lapsCompleted": "2191",
+	"lapsCompleted": "2344",
 	"lapsLed": "87",
-	"dnfs": "2",
+	"dnfs": "3",
 	"racesLed": "1",
 	"startPositions":[
 		"19",
@@ -2654,10 +2766,11 @@
 		"16",
 		"30",
 		"10",
-		"34"
+		"34",
+		"18"
 	],
-	"startPositionsCount": "15",
-	"starts": "15",
+	"startPositionsCount": "16",
+	"starts": "16",
 	"finishPositions":[
 		"39",
 		"26",
@@ -2673,11 +2786,12 @@
 		"12",
 		"11",
 		"17",
-		"31"
+		"31",
+		"38"
 	],
-	"finishPositionsCount": "15",
-	"finishes": "15",
-	"points": "1640"
+	"finishPositionsCount": "16",
+	"finishes": "16",
+	"points": "1670"
 },
 {
 	  "driverName": "S Vandergriff",
@@ -2701,9 +2815,10 @@
 		"0",
 		"0",
 		"0",
+		"0",
 		"0"
 	],
-	  "startPositionsCount": "15",
+	  "startPositionsCount": "16",
 	  "starts": "2",
 	"finishPositions":[
 		"43",
@@ -2720,16 +2835,17 @@
 		"0",
 		"0",
 		"0",
+		"0",
 		"0"
 	],
-  	"finishPositionsCount": "15",
+  	"finishPositionsCount": "16",
 	  "finishes": "2",
 	  "points": "35"
 },
 {
 	"driverName": "S Wimmer",
 	"carNumber": "27",
-	"lapsCompleted": "2266",
+	"lapsCompleted": "2465",
 	"lapsLed": "0",
 	"dnfs": "1",
 	"racesLed": "0",
@@ -2748,10 +2864,11 @@
 		"36",
 		"36",
 		"30",
-		"24"
+		"24",
+		"27"
 	],
-	"startPositionsCount": "15",
-	"starts": "14",
+	"startPositionsCount": "16",
+	"starts": "15",
 	"finishPositions":[
 		"15",
 		"0",
@@ -2767,11 +2884,12 @@
 		"32",
 		"31",
 		"13",
-		"29"
+		"29",
+		"24"
 	],
-	"finishPositionsCount": "15",
-	"finishes": "14",
-	"points": "1240"
+	"finishPositionsCount": "16",
+	"finishes": "15",
+	"points": "1340"
 },
 {
 	  "driverName": "T Anita",
@@ -2795,9 +2913,10 @@
 		"0",
 		"0",
 		"0",
+		"0",
 		"0"
 	],
-	  "startPositionsCount": "15",
+	  "startPositionsCount": "16",
 	  "starts": "2",
 	"finishPositions":[
 		"0",
@@ -2814,18 +2933,19 @@
 		"0",
 		"0",
 		"0",
+		"0",
 		"0"
 	],
-  	"finishPositionsCount": "15",
+  	"finishPositionsCount": "16",
 	  "finishes": "2",
 	  "points": "60"
 },
 {
 	"driverName": "T Labonte",
 	"carNumber": "5",
-	"lapsCompleted": "2426",
+	"lapsCompleted": "2525",
 	"lapsLed": "0",
-	"dnfs": "0",
+	"dnfs": "1",
 	"racesLed": "0",
 	"startPositions":[
 		"35",
@@ -2842,10 +2962,11 @@
 		"30",
 		"35",
 		"31",
-		"15"
+		"15",
+		"11"
 	],
-	"startPositionsCount": "15",
-	"starts": "14",
+	"startPositionsCount": "16",
+	"starts": "15",
 	"finishPositions":[
 		"22",
 		"8",
@@ -2861,11 +2982,12 @@
 		"30",
 		"22",
 		"19",
-		"23"
+		"23",
+		"43"
 	],
-	"finishPositionsCount": "15",
-	"finishes": "14",
-	"points": "1515"
+	"finishPositionsCount": "16",
+	"finishes": "15",
+	"points": "1520"
 },
 {
 	  "driverName": "T Reils",
@@ -2889,9 +3011,10 @@
 		"0",
 		"0",
 		"0",
+		"0",
 		"0"
 	],
-	  "startPositionsCount": "15",
+	  "startPositionsCount": "16",
 	  "starts": "1",
 	"finishPositions":[
 		"0",
@@ -2908,18 +3031,19 @@
 		"0",
 		"0",
 		"0",
+		"0",
 		"0"
 	],
-  	"finishPositionsCount": "15",
+  	"finishPositionsCount": "16",
 	  "finishes": "1",
 	  "points": "5"
 },
 {
 	"driverName": "T Stewart",
 	"carNumber": "20",
-	"lapsCompleted": "2480",
+	"lapsCompleted": "2580",
 	"lapsLed": "96",
-	"dnfs": "0",
+	"dnfs": "1",
 	"racesLed": "9",
 	"startPositions":[
 		"3",
@@ -2936,10 +3060,11 @@
 		"2",
 		"14",
 		"1",
-		"17"
+		"17",
+		"3"
 	],
-	"startPositionsCount": "15",
-	"starts": "15",
+	"startPositionsCount": "16",
+	"starts": "16",
 	"finishPositions":[
 		"19",
 		"2",
@@ -2955,16 +3080,17 @@
 		"3",
 		"35",
 		"23",
-		"6"
+		"6",
+		"42"
 	],
-	"finishPositionsCount": "15",
-	"finishes": "15",
-	"points": "2245"
+	"finishPositionsCount": "16",
+	"finishes": "16",
+	"points": "2255"
 },
 {
 	"driverName": "W Burton",
 	"carNumber": "22",
-	"lapsCompleted": "2102",
+	"lapsCompleted": "2301",
 	"lapsLed": "3",
 	"dnfs": "1",
 	"racesLed": "1",
@@ -2983,10 +3109,11 @@
 		"0",
 		"16",
 		"19",
-		"33"
+		"33",
+		"9"
 	],
-	"startPositionsCount": "15",
-	"starts": "13",
+	"startPositionsCount": "16",
+	"starts": "14",
 	"finishPositions":[
 		"0",
 		"20",
@@ -3002,11 +3129,12 @@
 		"0",
 		"9",
 		"14",
-		"30"
+		"30",
+		"25"
 	],
-	"finishPositionsCount": "15",
-	"finishes": "13",
-	"points": "1445"
+	"finishPositionsCount": "16",
+	"finishes": "14",
+	"points": "1540"
 }
   ]
 }
