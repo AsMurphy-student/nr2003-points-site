@@ -3,11 +3,11 @@ import { LineChart, LineSeriesType } from '@mui/x-charts'
 import { Container, Grid, Slider } from '@mui/material'
 
 import { DataGrid, GridColDef, GridRowSelectionModel, GridRowsProp, GridValidRowModel } from '@mui/x-data-grid';
-import { Driver } from '../interfaces/driver';
+import { driver } from '../interfaces/driver';
 import { race } from '../interfaces/race';
 import React from 'react';
 
-function ChartLineGraph(props: {driversData: Driver[], driversPointsPerRace: number[][], racesData: race[]}) {
+function ChartLineGraph(props: {driversData: driver[], driversPointsPerRace: number[][], racesData: race[]}) {
   const driversData = props.driversData;
   const driversPointsPerRace = props.driversPointsPerRace;
   const racesData = props.racesData;
@@ -194,7 +194,7 @@ function ChartLineGraph(props: {driversData: Driver[], driversPointsPerRace: num
       let pointsArray = driversPointsPerRace[index];
       pointsArray = pointsArray.slice(value[0] - 1, value[1]);
 
-      console.log(pointsArray);
+      // console.log(pointsArray);
 
       const newSeries: LineSeriesType = {
         curve: "linear",

@@ -5,7 +5,7 @@ import LapPieChart from "./LapPieChart";
 function RaceInfo(props: { raceData: race }) {
   const { raceData } = props;
 
-  console.log(raceData);
+  // console.log(raceData);
 
   return (
     <Grid container spacing={2} direction={{sm: 'column', md: 'row'}} sx={{backgroundColor: 'black'}} width='100%'>

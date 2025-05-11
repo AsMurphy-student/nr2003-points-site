@@ -11,6 +11,7 @@ import ChartLineGraph from './components/ChartLineGraph'
 // import LapPieChart from './components/LapPieChart'
 import RaceInfo from './components/RaceInfo'
 import { useNavigate } from 'react-router-dom'
+import NavBar from './components/NavBar'
 
 
 function App() {
@@ -39,7 +40,6 @@ function App() {
         contrastText: '#fff',
       },
     },
-    
   });
 
   // const defaultTheme = createTheme({
@@ -68,11 +68,8 @@ function App() {
   return (
         <ThemeProvider theme={defaultTheme}>
           {/* <Box sx={{flexGrow: 1, minHeight: '100vh', backgroundColor: 'secondary.main'}}> */}
-          <Container maxWidth='xl' sx={{flexGrow: 1, minHeight: '100vh', minWidth: '100%', backgroundColor: 'secondary.main'}}>
-
-            <AppBar>
-              
-            </AppBar>
+          <NavBar seasonName='2025-season' raceData={racesData} driverData={driversData} startingRacNum={0} />
+          <Container maxWidth='xl' sx={{flexGrow: 1, minHeight: '100vh', minWidth: '100%', backgroundColor: 'secondary.main', paddingTop: '2rem'}}>
 
             <ChartLineGraph driversData={driversData} driversPointsPerRace={driversPointsPerRace} racesData={racesData} />
             

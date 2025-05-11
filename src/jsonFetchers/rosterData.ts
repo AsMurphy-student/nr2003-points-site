@@ -1,7 +1,7 @@
 import { drivers } from '../../data/testdir/rosterData.json'
 import { races } from '../../data/testdir/raceData.json'
 
-import { Driver } from '../interfaces/driver'
+import { driver } from '../interfaces/driver'
 
 import { race, qualiDriver, raceDriver } from '../interfaces/race';
 
@@ -70,7 +70,7 @@ for (let r=0;r<races.length;r++) {
 
 
 
-let driversData: Driver[] = [];
+let driversData: driver[] = [];
 
 for (let d=0;d<drivers.length;d++) {
     const finishes = drivers[d].finishPositions.map((i) => Number(i));
@@ -110,7 +110,7 @@ for (let d=0;d<drivers.length;d++) {
     let avgSta = Number((drivers[d].startPositions.map((i) => Number(i)).reduce((acc, val) => acc + val, 0) / drivers[d].startPositions.length).toFixed(1));
     let avgFin = Number((drivers[d].finishPositions.map((i) => Number(i)).reduce((acc, val) => acc + val, 0) / drivers[d].finishPositions.length).toFixed(1));
 
-    let newDriver: Driver = {
+    let newDriver: driver = {
         driverName: drivers[d].driverName,
         carNumber: Number(drivers[d].carNumber),
         lapsCompleted: Number(drivers[d].lapsCompleted),
@@ -135,7 +135,7 @@ for (let d=0;d<drivers.length;d++) {
     driversData.push(newDriver);
 }
 
-driversData.sort((a: Driver, b: Driver) => {
+driversData.sort((a: driver, b: driver) => {
     if (b.points == a.points) {
         if (b.wins != a.wins) {
             return b.wins - a.wins;

@@ -4,8 +4,8 @@ import './index.css'
 import App from './App.tsx'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import NavigateToDefault from './components/NavigateToDefault.tsx'
-import { racesData } from './jsonFetchers/rosterData.ts'
-import Test from './components/Test.tsx'
+import { driversData, racesData } from './jsonFetchers/rosterData.ts'
+import RacePage from './components/RacePage.tsx'
 
 
 
@@ -17,9 +17,9 @@ createRoot(document.getElementById('root')!).render(
       <Routes>
         <Route path='/nr2003-points-site/'>
           <Route index element={<NavigateToDefault />}/>
-          <Route path='2025season/' element={<App />}/>
+          <Route path='2025-season/' element={<App />}/>
           {racesData.map((i, index) => {
-            return <Route path={`2025season/race-${index + 1}/`} element={<Test raceData={i} />}/>
+            return <Route path={`2025-season/race-${index + 1}/`} element={<RacePage raceData={i} raceIndex={index + 1} racesData={racesData} driverData={driversData} seasonName='2025-season' />}/>
           })}
         </Route>
       </Routes>

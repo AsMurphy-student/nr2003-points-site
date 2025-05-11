@@ -1,4 +1,4 @@
-interface Driver {
+interface driver {
     driverName: string;
     carNumber: number;
     lapsCompleted: number;
@@ -21,4 +21,4 @@ interface Driver {
     avgFin: number;
 }
 
-export type { Driver }
+export type { driver }
