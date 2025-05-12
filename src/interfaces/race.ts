@@ -7,7 +7,7 @@ type qualiDriver = {
 type raceDriver = {
     driverName: string;
     carNumber: number;
-    interval: number;
+    interval: string;
     lapsLed: number;
     lapsCompleted: number;
     status: string;

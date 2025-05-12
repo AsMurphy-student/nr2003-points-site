@@ -34,7 +34,7 @@ for (let r=0;r<races.length;r++) {
         const rDriver: raceDriver = {
             driverName: currentDriver.driverName,
             carNumber: Number(currentDriver.carNumber),
-            interval: Number(currentDriver.interval),
+            interval: currentDriver.interval,
             lapsLed: Number(lapsLed),
             lapsCompleted: Number(currentDriver.lapsCompleted),
             status: currentDriver.status,

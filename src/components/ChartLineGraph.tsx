@@ -264,7 +264,7 @@ function ChartLineGraph(props: {driversData: driver[], driversPointsPerRace: num
             yAxis={[{label: 'Points'}]}
             series={lineArray}
             height={1000}
-            hideLegend
+            hideLegend={false}
             grid={{ vertical: true, horizontal: true, }}
           />
           <Container sx={{ width: '100%', paddingLeft: '2rem', paddingRight: '2rem' }}>

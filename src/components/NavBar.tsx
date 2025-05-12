@@ -11,6 +11,7 @@ function NavBar(props: {seasonName: string, raceData: race[], driverData: driver
   const navigate = useNavigate();
 
   const { seasonName, raceData, driverData, startingRacNum } = props;
+
   console.log(driverData);
 
   const [raceNum, setRaceNum] = useState(startingRacNum);
