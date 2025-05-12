@@ -4,20 +4,20 @@ import { Container } from "@mui/material";
 import { defaultTheme } from "../variables/defaultTheme";
 import { driver } from "../interfaces/driver";
 import NavBar from "./NavBar";
-import { GridColDef } from "@mui/x-data-grid";
+// import { GridColDef } from "@mui/x-data-grid";
 
 function RacePage(props: { raceData: race, raceIndex: number, racesData: race[], driverData: driver[], seasonName: string }) {
   const { raceData, raceIndex, racesData, driverData, seasonName } = props;
 
-  const columns: GridColDef[] = [
-      { 
-        field: 'id', 
-        headerName: 'Rank', 
-        flex: 1,
-        maxWidth: 90,
-        type: 'number', 
-      },
-  ];
+  // const columns: GridColDef[] = [
+  //     { 
+  //       field: 'id', 
+  //       headerName: 'Rank', 
+  //       flex: 1,
+  //       maxWidth: 90,
+  //       type: 'number', 
+  //     },
+  // ];
 
   return (
     <ThemeProvider theme={defaultTheme}>

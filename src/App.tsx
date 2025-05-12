@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 // import { ChartContainer, LineChart, LinePlot, LineSeriesType } from '@mui/x-charts'
-import { AppBar, Button, Container, createTheme, Grid } from '@mui/material'
+import { Button, Container, createTheme, Grid } from '@mui/material'
 
 import { driversData, driversPointsPerRace, racesData } from './jsonFetchers/rosterData'
 

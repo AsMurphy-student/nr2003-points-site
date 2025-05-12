@@ -248,38 +248,7 @@ function ChartLineGraph(props: {driversData: driver[], driversPointsPerRace: num
             disableRowSelectionOnClick
             onRowSelectionModelChange={(ids) => {
               setIdArray(ids);
-
               updateLineSeries(ids);
-
-              // setLineArray([]);
-
-              // let newArray: LineSeriesType[] = [];
-
-              // ids.ids.forEach(row => {
-              //   const index = Number(row) - 1;
-
-              //   let pointsArray = driversPointsPerRace[index];
-              //   pointsArray = pointsArray.slice(value[0] - 1, value[1]);
-
-              //   console.log(pointsArray);
-
-              //   const newSeries: LineSeriesType = {
-              //     curve: "linear",
-              //     data: pointsArray,
-              //     label: driversNames[index],
-              //     type: 'line',
-              //     showMark: false,
-              //   };
-                
-              //   newArray.push(newSeries);
-                
-              // });
-
-              // newArray.sort((a: LineSeriesType, b: LineSeriesType) => {
-              //   return b.data![b.data!.length - 1]! - a.data![a.data!.length - 1]!;
-              // });
-
-              // setLineArray(newArray);
             }}
           />
         </Grid>
