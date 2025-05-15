@@ -7,6 +7,8 @@ import NavBar from "./NavBar";
 import { DataGrid, GridColDef, GridRowsProp, GridValidRowModel } from "@mui/x-data-grid";
 import { useEffect, useState } from "react";
 import LapPieChart from "./LapPieChart";
+import Daytona from "./tracks/Daytona";
+import UnknownTrack from "./tracks/Unknown";
 
 function RacePage(props: { raceData: race, raceIndex: number, racesData: race[], driverData: driver[], seasonName: string }) {
   const { raceData, raceIndex, racesData, driverData, seasonName } = props;
@@ -83,6 +85,15 @@ function RacePage(props: { raceData: race, raceIndex: number, racesData: race[],
     setRows(temprows);
   }, [raceData]);
 
+  const renderSwitch = (param: string) => {
+    switch(param) {
+      case 'DAYTONA INTERNATIONAL SPEEDWAY':
+        return <Daytona />
+      default:
+        return <UnknownTrack />
+    }
+  }
+
   return (
     <ThemeProvider theme={defaultTheme}>
       <NavBar seasonName={seasonName} raceData={racesData} driversData={driverData} startingRaceNum={raceIndex} startingDriverNum={0} />
@@ -102,6 +113,8 @@ function RacePage(props: { raceData: race, raceIndex: number, racesData: race[],
                 <LapPieChart raceData={raceData}/>
               </Grid>
             </Grid>
+
+            {renderSwitch(raceData.raceName)}
         </Container>
     </ThemeProvider>
   );

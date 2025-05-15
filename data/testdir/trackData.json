@@ -1,0 +1,12 @@
+{
+    "tracks": {
+        "DAYTONA INTERNATIONAL SPEEDWAY": {
+            "image": "daytona-international-speedway.png",
+            "youtubeID": "something"
+        },
+        "Nazareth Speedway� WKC": {
+            "image": "nazareth-speedway.jpg",
+            "youtubeID": "something"
+        }
+    }
+}

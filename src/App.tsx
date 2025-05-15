@@ -65,6 +65,8 @@ function App() {
   //   },
   // });
 
+  console.log(racesData);
+
   return (
         <ThemeProvider theme={defaultTheme}>
           {/* <Box sx={{flexGrow: 1, minHeight: '100vh', backgroundColor: 'secondary.main'}}> */}
