@@ -8,7 +8,7 @@ import { DataGrid, GridColDef, GridRowsProp, GridValidRowModel } from "@mui/x-da
 import { useEffect, useState } from "react";
 import LapPieChart from "./LapPieChart";
 
-function DriverPage(props: { raceData: race, raceIndex: number, racesData: race[], driverData: driver[], seasonName: string }) {
+function RacePage(props: { raceData: race, raceIndex: number, racesData: race[], driverData: driver[], seasonName: string }) {
   const { raceData, raceIndex, racesData, driverData, seasonName } = props;
 
   const columns: GridColDef[] = [
@@ -85,7 +85,7 @@ function DriverPage(props: { raceData: race, raceIndex: number, racesData: race[
 
   return (
     <ThemeProvider theme={defaultTheme}>
-      <NavBar seasonName={seasonName} raceData={racesData} driverData={driverData} startingRacNum={raceIndex} />
+      <NavBar seasonName={seasonName} raceData={racesData} driversData={driverData} startingRaceNum={raceIndex} startingDriverNum={0} />
         <Container maxWidth='xl' sx={{flexGrow: 1, minHeight: '100vh', minWidth: '100%', backgroundColor: 'secondary.main'}}>
           <h1 style={{ margin: 0, color: '#fff', paddingTop: '2rem'}}>{raceData.raceName}</h1>
             <Grid container spacing={0} direction='row'>
@@ -107,4 +107,4 @@ function DriverPage(props: { raceData: race, raceIndex: number, racesData: race[
   );
 }
 
-export default DriverPage
+export default RacePage

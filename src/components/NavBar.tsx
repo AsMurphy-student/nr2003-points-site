@@ -6,23 +6,33 @@ import { driver } from "../interfaces/driver";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-function NavBar(props: {seasonName: string, raceData: race[], driverData: driver[], startingRacNum: number}) {
-
+function NavBar(props: {seasonName: string, raceData: race[], driversData: driver[], startingRaceNum: number, startingDriverNum: number}) {
   const navigate = useNavigate();
 
-  const { seasonName, raceData, driverData, startingRacNum } = props;
+  const { seasonName, raceData, driversData, startingRaceNum, startingDriverNum } = props;
 
-  console.log(driverData);
+  const [raceNum, setRaceNum] = useState(startingRaceNum);
+  const [driverNum, setDriverNum] = useState(startingDriverNum);
 
-  const [raceNum, setRaceNum] = useState(startingRacNum);
-
-  const handleChange = (event: SelectChangeEvent) => {
+  const raceHandleChange = (event: SelectChangeEvent) => {
     if (Number(event.target.value) > 0) {
       setRaceNum(Number(event.target.value));
       navigate(`/nr2003-points-site/${seasonName}/race-${event.target.value}`);
     }
     else {
       setRaceNum(Number(event.target.value));
+      navigate(`/nr2003-points-site/${seasonName}/`);
+    }
+  };
+
+  const driverHandleChange = (event: SelectChangeEvent) => {
+    if (Number(event.target.value) > 0) {
+      const selection = driversData[Number(event.target.value) - 1];
+      setDriverNum(Number(event.target.value));
+      navigate(`/nr2003-points-site/${seasonName}/${selection.driverName.replace(/\s+/g, '-').toLowerCase()}/`);
+    }
+    else {
+      setDriverNum(0);
       navigate(`/nr2003-points-site/${seasonName}/`);
     }
   };
@@ -66,11 +76,32 @@ function NavBar(props: {seasonName: string, raceData: race[], driverData: driver
                 id="demo-simple-select"
                 value={String(raceNum)}
                 label="Race"
-                onChange={handleChange}
+                onChange={raceHandleChange}
               >
                 <MenuItem value={0}>Select Race to View</MenuItem>
                 {raceData.map((i, index) => {
                   return <MenuItem value={index + 1}>#{index + 1} {i.raceName.toUpperCase()}</MenuItem>
+                })}
+
+                {/* <MenuItem value={10}>Ten</MenuItem>
+                <MenuItem value={20}>Twenty</MenuItem>
+                <MenuItem value={30}>Thirty</MenuItem> */}
+              </Select>
+            </FormControl>
+
+            <FormControl>
+              <InputLabel id="demo-simple-select-label">Driver</InputLabel>
+              <Select
+                autoWidth
+                labelId="demo-simple-select-label"
+                id="demo-simple-select"
+                value={String(driverNum)}
+                label="Driver"
+                onChange={driverHandleChange}
+              >
+                <MenuItem value={0}>Select Driver to View</MenuItem>
+                {driversData.map((i, index) => {
+                  return <MenuItem value={index + 1}>#{index + 1} {i.driverName}</MenuItem>
                 })}
 
                 {/* <MenuItem value={10}>Ten</MenuItem>

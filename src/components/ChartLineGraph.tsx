@@ -6,6 +6,7 @@ import { DataGrid, GridColDef, GridRowSelectionModel, GridRowsProp, GridValidRow
 import { driver } from '../interfaces/driver';
 import { race } from '../interfaces/race';
 import React from 'react';
+import { useOrientation } from 'react-use';
 
 function ChartLineGraph(props: {driversData: driver[], driversPointsPerRace: number[][], racesData: race[]}) {
   const driversData = props.driversData;
@@ -236,10 +237,28 @@ function ChartLineGraph(props: {driversData: driver[], driversPointsPerRace: num
       updateLineSeries(idArray);
   }, [xAxisRaceArray]);
 
+  const orientation = useOrientation();
+  const [windowHeight, setWindowHeight] = useState(window.innerHeight);
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowHeight(window.innerHeight);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
 
   return (
       <Grid container spacing={0} direction={{sm: 'column', md: 'row'}}>
-        <Grid minHeight='100%' sx={{maxWidth: {sm: '100%', md: '50%'}}}>
+        <Grid sx={{maxWidth: {sm: '100%', md: '50%'}}} height={orientation.type === 'landscape-primary' ? 
+              windowHeight * 0.80
+              :
+              windowHeight * 0.40
+            }>
           <DataGrid
             rows={rows}
             columns={columns}
@@ -258,12 +277,16 @@ function ChartLineGraph(props: {driversData: driver[], driversPointsPerRace: num
             slotProps={{
               noDataOverlay: {
                   message: "Check Drivers in Table to Add Data",
-              }
+              },
             }}
             xAxis={[{ data: xAxisRaceArray, scaleType: 'point', label: 'Races' }]}
             yAxis={[{label: 'Points'}]}
             series={lineArray}
-            height={1000}
+            height={orientation.type === 'landscape-primary' ? 
+              windowHeight * 0.80
+              :
+              windowHeight * 0.40
+            }
             hideLegend={false}
             grid={{ vertical: true, horizontal: true, }}
           />
