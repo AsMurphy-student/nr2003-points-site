@@ -96,7 +96,7 @@ function RacePage(props: { raceData: race, raceIndex: number, racesData: race[],
 
   return (
     <ThemeProvider theme={defaultTheme}>
-      <NavBar seasonName={seasonName} raceData={racesData} driversData={driverData} startingRaceNum={raceIndex} startingDriverNum={0} />
+      <NavBar seasonName={seasonName} raceData={racesData} driversData={driverData} startingRaceNum={raceIndex} startingDriverNum={0} onRacePage={true} onDriverPage={false} />
         <Container maxWidth='xl' sx={{flexGrow: 1, minHeight: '100vh', minWidth: '100%', backgroundColor: 'secondary.main'}}>
           <h1 style={{ margin: 0, color: '#fff', paddingTop: '2rem'}}>{raceData.raceName}</h1>
             <Grid container spacing={0} direction={{sm: 'column', md: 'row'}}>

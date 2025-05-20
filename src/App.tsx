@@ -68,7 +68,7 @@ function App() {
   return (
         <ThemeProvider theme={defaultTheme}>
           {/* <Box sx={{flexGrow: 1, minHeight: '100vh', backgroundColor: 'secondary.main'}}> */}
-          <NavBar seasonName='2025-season' raceData={racesData} driversData={driversData} startingRaceNum={0} startingDriverNum={0} />
+          <NavBar seasonName='2025-season' raceData={racesData} driversData={driversData} startingRaceNum={0} startingDriverNum={0} onRacePage={false} onDriverPage={false} />
           <Container maxWidth='xl' sx={{flexGrow: 1, minHeight: '100vh', minWidth: '100%', backgroundColor: 'secondary.main', paddingTop: '2rem'}}>
 
             <ChartLineGraph driversData={driversData} driversPointsPerRace={driversPointsPerRace} racesData={racesData} />

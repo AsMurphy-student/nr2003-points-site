@@ -6,10 +6,10 @@ import { driver } from "../interfaces/driver";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
-function NavBar(props: {seasonName: string, raceData: race[], driversData: driver[], startingRaceNum: number, startingDriverNum: number}) {
+function NavBar(props: {seasonName: string, raceData: race[], driversData: driver[], startingRaceNum: number, startingDriverNum: number, onRacePage: boolean, onDriverPage: boolean}) {
   const navigate = useNavigate();
 
-  const { seasonName, raceData, driversData, startingRaceNum, startingDriverNum } = props;
+  const { seasonName, raceData, driversData, startingRaceNum, startingDriverNum, onRacePage, onDriverPage } = props;
 
   const [raceNum, setRaceNum] = useState(startingRaceNum);
   const [driverNum, setDriverNum] = useState(startingDriverNum);
@@ -78,14 +78,10 @@ function NavBar(props: {seasonName: string, raceData: race[], driversData: drive
                 label="Race"
                 onChange={raceHandleChange}
               >
-                <MenuItem value={0}>Select Race to View</MenuItem>
+                <MenuItem value={0}>{onRacePage ? "Back to Standings" : "Select Race to View"}</MenuItem>
                 {raceData.map((i, index) => {
                   return <MenuItem value={index + 1}>#{index + 1} {i.raceName.toUpperCase()}</MenuItem>
                 })}
-
-                {/* <MenuItem value={10}>Ten</MenuItem>
-                <MenuItem value={20}>Twenty</MenuItem>
-                <MenuItem value={30}>Thirty</MenuItem> */}
               </Select>
             </FormControl>
 
@@ -99,22 +95,16 @@ function NavBar(props: {seasonName: string, raceData: race[], driversData: drive
                 label="Driver"
                 onChange={driverHandleChange}
               >
-                <MenuItem value={0}>Select Driver to View</MenuItem>
+                <MenuItem value={0}>{onDriverPage ? "Back to Standings" : "Select Driver to View"}</MenuItem>
                 {driversData.map((i, index) => {
                   return <MenuItem value={index + 1}>#{index + 1} {i.driverName}</MenuItem>
                 })}
-
-                {/* <MenuItem value={10}>Ten</MenuItem>
-                <MenuItem value={20}>Twenty</MenuItem>
-                <MenuItem value={30}>Thirty</MenuItem> */}
               </Select>
             </FormControl>
 
             <Typography variant="h6" component="div" textAlign='right' sx={{ flexGrow: 1, marginLeft: '2rem' }}>
               {seasonName}
             </Typography>
-
-            {/* <Button color="inherit">Login</Button> */}
           </Toolbar>
         </AppBar>
       </Box>

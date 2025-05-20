@@ -82,7 +82,7 @@ function DriverPage(props: { driverData: driver, raceIndex: number, driverIndex:
 
   return (
     <ThemeProvider theme={defaultTheme}>
-      <NavBar seasonName={seasonName} raceData={racesData} driversData={driversData} startingRaceNum={raceIndex} startingDriverNum={driverIndex} />
+      <NavBar seasonName={seasonName} raceData={racesData} driversData={driversData} startingRaceNum={raceIndex} startingDriverNum={driverIndex} onRacePage={false} onDriverPage={true} />
       <Container maxWidth='xl' sx={{flexGrow: 1, minHeight: '100vh', minWidth: '100%', backgroundColor: 'secondary.main'}}>
         <h1 style={{ margin: 0, color: '#fff', paddingTop: '2rem'}}>{driverData.driverName}</h1>
         <Grid container spacing={0} direction='row'>
