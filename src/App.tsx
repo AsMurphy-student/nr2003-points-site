@@ -63,7 +63,7 @@ function App() {
   //   },
   // });
 
-  console.log(racesData);
+  // console.log(racesData);
 
   return (
         <ThemeProvider theme={defaultTheme}>

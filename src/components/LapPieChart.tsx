@@ -39,9 +39,7 @@ function LapPieChart(props: {raceData: race, hideLegend: boolean}) {
   const radius = windowWidth >= 900 ? 
                 windowWidth / 8
                 :
-                windowWidth / 4
-              
-  console.log(radius);
+                windowWidth / 4;
 
   return (
             <PieChart
