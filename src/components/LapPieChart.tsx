@@ -1,5 +1,7 @@
+import { useOrientation } from 'react-use';
 import { race } from '../interfaces/race';
 import { PieChart, PieValueType } from '@mui/x-charts';
+import { useEffect, useState } from 'react';
 
 function LapPieChart(props: {raceData: race, height: number, hideLegend: boolean}) {
   const { raceData, height = 400, hideLegend = true} = props;
@@ -22,19 +24,43 @@ function LapPieChart(props: {raceData: race, height: number, hideLegend: boolean
     return b.value - a.value;
   });
 
+  const orientation = useOrientation();
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  const radius = windowWidth >= 900 ? 
+                windowWidth / 8
+                :
+                windowWidth / 4
+              
+  console.log(radius);
+
   return (
             <PieChart
               series={[
                 {
                   data: dataArray,
                   innerRadius: 20,
-                  outerRadius: 120,
+                  outerRadius: radius,
                   paddingAngle: 2,
                   cornerRadius: 5,
                 },
               ]}
               hideLegend={hideLegend}
-              height={height}
+              height={windowWidth >= 900 ? 
+                windowWidth / 4
+                :
+                windowWidth / 2}
             />
   )
 }

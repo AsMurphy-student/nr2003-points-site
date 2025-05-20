@@ -1,7 +1,7 @@
 import { ThemeProvider } from "@emotion/react";
 import { race } from "../interfaces/race";
 import { defaultTheme } from "../variables/defaultTheme";
-import { Box, AppBar, Toolbar, Typography, Button, FormControl, InputLabel, MenuItem, Select, SelectChangeEvent } from "@mui/material";
+import { Box, AppBar, Toolbar, Typography, FormControl, InputLabel, MenuItem, Select, SelectChangeEvent } from "@mui/material";
 import { driver } from "../interfaces/driver";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
@@ -110,11 +110,11 @@ function NavBar(props: {seasonName: string, raceData: race[], driversData: drive
               </Select>
             </FormControl>
 
-            <Typography variant="h6" component="div" sx={{ flexGrow: 1, marginLeft: '2rem' }}>
+            <Typography variant="h6" component="div" textAlign='right' sx={{ flexGrow: 1, marginLeft: '2rem' }}>
               {seasonName}
             </Typography>
 
-            <Button color="inherit">Login</Button>
+            {/* <Button color="inherit">Login</Button> */}
           </Toolbar>
         </AppBar>
       </Box>

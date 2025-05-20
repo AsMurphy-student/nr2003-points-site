@@ -99,8 +99,8 @@ function RacePage(props: { raceData: race, raceIndex: number, racesData: race[],
       <NavBar seasonName={seasonName} raceData={racesData} driversData={driverData} startingRaceNum={raceIndex} startingDriverNum={0} />
         <Container maxWidth='xl' sx={{flexGrow: 1, minHeight: '100vh', minWidth: '100%', backgroundColor: 'secondary.main'}}>
           <h1 style={{ margin: 0, color: '#fff', paddingTop: '2rem'}}>{raceData.raceName}</h1>
-            <Grid container spacing={0} direction='row'>
-              <Grid height='86vh' sx={{width: '30%'}}>
+            <Grid container spacing={0} direction={{sm: 'column', md: 'row'}}>
+              <Grid height='86vh' sx={{width: {sm: '100%', md: '50%'}}}>
                 <DataGrid
                   rows={rows}
                   columns={columns}
@@ -108,9 +108,9 @@ function RacePage(props: { raceData: race, raceIndex: number, racesData: race[],
                   disableRowSelectionOnClick
                 />
               </Grid>
-              <Grid height='86vh' sx={{width: '30%'}}>
+              <Grid height='86vh' sx={{width: {sm: '100%', md: '50%'}}}>
                 <h2 style={{color: '#fff', textAlign: 'center'}}>Laps Led</h2>
-                <LapPieChart raceData={raceData}/>
+                <LapPieChart raceData={raceData} />
               </Grid>
             </Grid>
 
