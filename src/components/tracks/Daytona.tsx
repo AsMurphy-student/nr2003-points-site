@@ -11,7 +11,7 @@ function Daytona() {
           <img src={DaytonaImage} alt="Daytona International Speedway" />
         </div>
         <div style={{width: '50%'}}>
-          <h1 style={{color: '#fff'}}>Track Information</h1>
+          <h1 style={{color: '#fff'}}>Track Information: (Coming soon)</h1>
         </div>
       </Stack>
     </Container>
