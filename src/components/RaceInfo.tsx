@@ -21,7 +21,7 @@ function RaceInfo(props: { raceData: race }) {
 
       <Grid height='100%' size='grow' sx={{width: {sm: '100%', md: '50%'}}}>
         <h2 style={{color: '#fff', textAlign: 'center'}}>Laps Led</h2>
-        <LapPieChart raceData={raceData} />
+        <LapPieChart raceData={raceData} hideLegend={true} />
         
       </Grid>
 

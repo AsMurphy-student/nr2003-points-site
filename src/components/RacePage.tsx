@@ -110,7 +110,7 @@ function RacePage(props: { raceData: race, raceIndex: number, racesData: race[],
               </Grid>
               <Grid height='86vh' sx={{width: {sm: '100%', md: '50%'}}}>
                 <h2 style={{color: '#fff', textAlign: 'center'}}>Laps Led</h2>
-                <LapPieChart raceData={raceData} />
+                <LapPieChart raceData={raceData} hideLegend={true} />
               </Grid>
             </Grid>
 

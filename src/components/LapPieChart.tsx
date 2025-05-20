@@ -1,10 +1,9 @@
-import { useOrientation } from 'react-use';
 import { race } from '../interfaces/race';
 import { PieChart, PieValueType } from '@mui/x-charts';
 import { useEffect, useState } from 'react';
 
-function LapPieChart(props: {raceData: race, height: number, hideLegend: boolean}) {
-  const { raceData, height = 400, hideLegend = true} = props;
+function LapPieChart(props: {raceData: race, hideLegend: boolean}) {
+  const { raceData, hideLegend = true} = props;
   
   let dataArray: PieValueType[] = [];
 
@@ -24,7 +23,6 @@ function LapPieChart(props: {raceData: race, height: number, hideLegend: boolean
     return b.value - a.value;
   });
 
-  const orientation = useOrientation();
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   useEffect(() => {
     const handleResize = () => {
@@ -63,12 +61,6 @@ function LapPieChart(props: {raceData: race, height: number, hideLegend: boolean
                 windowWidth / 2}
             />
   )
-}
-
-// Does not actually work just gets rid of error
-LapPieChart.defaultProps = {
-  height: 400,
-  hideLegend: true,
 }
 
 export default LapPieChart
