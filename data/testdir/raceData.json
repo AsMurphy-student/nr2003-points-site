@@ -11320,6 +11320,580 @@
 	"weather":"Weather: Clear, 86 °F, Northwest 2 mph",
 	"pitstopFrequency":"Pitstop Frequency: 1x",
 	"aiStrength":"AI Strength: 97%"
+},
+{
+	"quali":[
+		{
+			"driverName": "A Murphy",
+			"carNumber": "177",
+			"speed": "179.105 mph"
+		},
+		{
+			"driverName": "D Jarrett",
+			"carNumber": "88",
+			"speed": "179.075 mph"
+		},
+		{
+			"driverName": "M Martin",
+			"carNumber": "6",
+			"speed": "178.921 mph"
+		},
+		{
+			"driverName": "B Labonte",
+			"carNumber": "18",
+			"speed": "178.808 mph"
+		},
+		{
+			"driverName": "J Gordon",
+			"carNumber": "24",
+			"speed": "178.779 mph"
+		},
+		{
+			"driverName": "M Kenseth",
+			"carNumber": "17",
+			"speed": "178.779 mph"
+		},
+		{
+			"driverName": "D Earnhardt Jr.",
+			"carNumber": "8",
+			"speed": "178.737 mph"
+		},
+		{
+			"driverName": "J Green",
+			"carNumber": "30",
+			"speed": "178.725 mph"
+		},
+		{
+			"driverName": "K Harvick",
+			"carNumber": "29",
+			"speed": "178.672 mph"
+		},
+		{
+			"driverName": "T Labonte",
+			"carNumber": "5",
+			"speed": "178.666 mph"
+		},
+		{
+			"driverName": "M Skinner",
+			"carNumber": "4",
+			"speed": "178.542 mph"
+		},
+		{
+			"driverName": "R Rudd",
+			"carNumber": "21",
+			"speed": "178.513 mph"
+		},
+		{
+			"driverName": "K Wallace",
+			"carNumber": "23",
+			"speed": "178.507 mph"
+		},
+		{
+			"driverName": "D Blaney",
+			"carNumber": "77",
+			"speed": "178.353 mph"
+		},
+		{
+			"driverName": "M Waltrip",
+			"carNumber": "15",
+			"speed": "178.348 mph"
+		},
+		{
+			"driverName": "R Gordon",
+			"carNumber": "31",
+			"speed": "178.253 mph"
+		},
+		{
+			"driverName": "R Craven",
+			"carNumber": "32",
+			"speed": "178.212 mph"
+		},
+		{
+			"driverName": "W Burton",
+			"carNumber": "22",
+			"speed": "178.189 mph"
+		},
+		{
+			"driverName": "J Johnson",
+			"carNumber": "48",
+			"speed": "178.165 mph"
+		},
+		{
+			"driverName": "J Burton",
+			"carNumber": "99",
+			"speed": "178.118 mph"
+		},
+		{
+			"driverName": "B Elliott",
+			"carNumber": "9",
+			"speed": "178.077 mph"
+		},
+		{
+			"driverName": "R Newman",
+			"carNumber": "12",
+			"speed": "178.042 mph"
+		},
+		{
+			"driverName": "K Schrader",
+			"carNumber": "49",
+			"speed": "177.983 mph"
+		},
+		{
+			"driverName": "J Spencer",
+			"carNumber": "7",
+			"speed": "177.895 mph"
+		},
+		{
+			"driverName": "K Busch",
+			"carNumber": "97",
+			"speed": "177.825 mph"
+		},
+		{
+			"driverName": "T Stewart",
+			"carNumber": "20",
+			"speed": "177.731 mph"
+		},
+		{
+			"driverName": "J Andretti",
+			"carNumber": "43",
+			"speed": "177.696 mph"
+		},
+		{
+			"driverName": "K Petty",
+			"carNumber": "45",
+			"speed": "177.655 mph"
+		},
+		{
+			"driverName": "G Biffle",
+			"carNumber": "16",
+			"speed": "177.638 mph"
+		},
+		{
+			"driverName": "J Benson",
+			"carNumber": "10",
+			"speed": "177.626 mph"
+		},
+		{
+			"driverName": "J Nadeau",
+			"carNumber": "01",
+			"speed": "177.544 mph"
+		},
+		{
+			"driverName": "E Sadler",
+			"carNumber": "38",
+			"speed": "177.515 mph"
+		},
+		{
+			"driverName": "B Bodine",
+			"carNumber": "11",
+			"speed": "177.480 mph"
+		},
+		{
+			"driverName": "J Mayfield",
+			"carNumber": "19",
+			"speed": "177.363 mph"
+		},
+		{
+			"driverName": "R Wallace",
+			"carNumber": "2",
+			"speed": "177.235 mph"
+		},
+		{
+			"driverName": "J Nemechek",
+			"carNumber": "25",
+			"speed": "177.119 mph"
+		},
+		{
+			"driverName": "S Wimmer",
+			"carNumber": "27",
+			"speed": "176.962 mph"
+		},
+		{
+			"driverName": "T Reils",
+			"carNumber": "153",
+			"speed": "176.817 mph"
+		},
+		{
+			"driverName": "B Said",
+			"carNumber": "67",
+			"speed": "176.794 mph"
+		},
+		{
+			"driverName": "G Hill",
+			"carNumber": "188",
+			"speed": "176.580 mph"
+		},
+		{
+			"driverName": "J Sprague",
+			"carNumber": "0",
+			"speed": "176.477 mph"
+		},
+		{
+			"driverName": "S Park",
+			"carNumber": "1",
+			"speed": "175.759 mph"
+		},
+		{
+			"driverName": "J Balkan",
+			"carNumber": "109",
+			"speed": "171.027 mph"
+		}
+	],
+	"race":[
+		{
+			"driverName": "A Murphy",
+			"carNumber": "177",
+			"interval": "166.172",
+			"lapsLed": "77*",
+			"lapsCompleted": "134",
+			"status": "Running"
+		},
+		{
+			"driverName": "R Rudd",
+			"carNumber": "21",
+			"interval": "-0.12",
+			"lapsLed": "10 ",
+			"lapsCompleted": "134",
+			"status": "Running"
+		},
+		{
+			"driverName": "J Johnson",
+			"carNumber": "48",
+			"interval": "-0.38",
+			"lapsLed": "0 ",
+			"lapsCompleted": "134",
+			"status": "Running"
+		},
+		{
+			"driverName": "J Burton",
+			"carNumber": "99",
+			"interval": "-0.58",
+			"lapsLed": "42 ",
+			"lapsCompleted": "134",
+			"status": "Running"
+		},
+		{
+			"driverName": "D Jarrett",
+			"carNumber": "88",
+			"interval": "-1.78",
+			"lapsLed": "0 ",
+			"lapsCompleted": "134",
+			"status": "Running"
+		},
+		{
+			"driverName": "M Kenseth",
+			"carNumber": "17",
+			"interval": "-1.89",
+			"lapsLed": "0 ",
+			"lapsCompleted": "134",
+			"status": "Running"
+		},
+		{
+			"driverName": "D Earnhardt Jr.",
+			"carNumber": "8",
+			"interval": "-2.22",
+			"lapsLed": "0 ",
+			"lapsCompleted": "134",
+			"status": "Running"
+		},
+		{
+			"driverName": "R Newman",
+			"carNumber": "12",
+			"interval": "-2.51",
+			"lapsLed": "0 ",
+			"lapsCompleted": "134",
+			"status": "Running"
+		},
+		{
+			"driverName": "G Biffle",
+			"carNumber": "16",
+			"interval": "-4.46",
+			"lapsLed": "0 ",
+			"lapsCompleted": "134",
+			"status": "Running"
+		},
+		{
+			"driverName": "T Labonte",
+			"carNumber": "5",
+			"interval": "-4.62",
+			"lapsLed": "0 ",
+			"lapsCompleted": "134",
+			"status": "Running"
+		},
+		{
+			"driverName": "R Gordon",
+			"carNumber": "31",
+			"interval": "-4.88",
+			"lapsLed": "0 ",
+			"lapsCompleted": "134",
+			"status": "Running"
+		},
+		{
+			"driverName": "D Blaney",
+			"carNumber": "77",
+			"interval": "-4.98",
+			"lapsLed": "2 ",
+			"lapsCompleted": "134",
+			"status": "Running"
+		},
+		{
+			"driverName": "K Wallace",
+			"carNumber": "23",
+			"interval": "-5.09",
+			"lapsLed": "0 ",
+			"lapsCompleted": "134",
+			"status": "Running"
+		},
+		{
+			"driverName": "J Nemechek",
+			"carNumber": "25",
+			"interval": "-5.26",
+			"lapsLed": "0 ",
+			"lapsCompleted": "134",
+			"status": "Running"
+		},
+		{
+			"driverName": "R Craven",
+			"carNumber": "32",
+			"interval": "-5.39",
+			"lapsLed": "0 ",
+			"lapsCompleted": "134",
+			"status": "Running"
+		},
+		{
+			"driverName": "J Sprague",
+			"carNumber": "0",
+			"interval": "-5.53",
+			"lapsLed": "0 ",
+			"lapsCompleted": "134",
+			"status": "Running"
+		},
+		{
+			"driverName": "M Martin",
+			"carNumber": "6",
+			"interval": "-5.72",
+			"lapsLed": "0 ",
+			"lapsCompleted": "134",
+			"status": "Running"
+		},
+		{
+			"driverName": "R Wallace",
+			"carNumber": "2",
+			"interval": "-5.96",
+			"lapsLed": "0 ",
+			"lapsCompleted": "134",
+			"status": "Running"
+		},
+		{
+			"driverName": "J Benson",
+			"carNumber": "10",
+			"interval": "-6.30",
+			"lapsLed": "0 ",
+			"lapsCompleted": "134",
+			"status": "Running"
+		},
+		{
+			"driverName": "B Labonte",
+			"carNumber": "18",
+			"interval": "-6.54",
+			"lapsLed": "0 ",
+			"lapsCompleted": "134",
+			"status": "Running"
+		},
+		{
+			"driverName": "M Skinner",
+			"carNumber": "4",
+			"interval": "-6.77",
+			"lapsLed": "0 ",
+			"lapsCompleted": "134",
+			"status": "Running"
+		},
+		{
+			"driverName": "G Hill",
+			"carNumber": "188",
+			"interval": "-7.84",
+			"lapsLed": "0 ",
+			"lapsCompleted": "134",
+			"status": "Running"
+		},
+		{
+			"driverName": "J Gordon",
+			"carNumber": "24",
+			"interval": "-7.98",
+			"lapsLed": "0 ",
+			"lapsCompleted": "134",
+			"status": "Running"
+		},
+		{
+			"driverName": "E Sadler",
+			"carNumber": "38",
+			"interval": "-8.24",
+			"lapsLed": "0 ",
+			"lapsCompleted": "134",
+			"status": "Running"
+		},
+		{
+			"driverName": "J Nadeau",
+			"carNumber": "01",
+			"interval": "-8.42",
+			"lapsLed": "0 ",
+			"lapsCompleted": "134",
+			"status": "Running"
+		},
+		{
+			"driverName": "K Busch",
+			"carNumber": "97",
+			"interval": "-8.97",
+			"lapsLed": "0 ",
+			"lapsCompleted": "134",
+			"status": "Running"
+		},
+		{
+			"driverName": "B Bodine",
+			"carNumber": "11",
+			"interval": "-10.62",
+			"lapsLed": "0 ",
+			"lapsCompleted": "134",
+			"status": "Running"
+		},
+		{
+			"driverName": "S Wimmer",
+			"carNumber": "27",
+			"interval": "-11.41",
+			"lapsLed": "0 ",
+			"lapsCompleted": "134",
+			"status": "Running"
+		},
+		{
+			"driverName": "B Elliott",
+			"carNumber": "9",
+			"interval": "-16.20",
+			"lapsLed": "0 ",
+			"lapsCompleted": "134",
+			"status": "Running"
+		},
+		{
+			"driverName": "S Park",
+			"carNumber": "1",
+			"interval": "-1L",
+			"lapsLed": "0 ",
+			"lapsCompleted": "133",
+			"status": "Running"
+		},
+		{
+			"driverName": "K Petty",
+			"carNumber": "45",
+			"interval": "-1L",
+			"lapsLed": "0 ",
+			"lapsCompleted": "133",
+			"status": "Running"
+		},
+		{
+			"driverName": "B Said",
+			"carNumber": "67",
+			"interval": "-1L",
+			"lapsLed": "0 ",
+			"lapsCompleted": "133",
+			"status": "Running"
+		},
+		{
+			"driverName": "J Balkan",
+			"carNumber": "109",
+			"interval": "-1L",
+			"lapsLed": "0 ",
+			"lapsCompleted": "133",
+			"status": "Running"
+		},
+		{
+			"driverName": "W Burton",
+			"carNumber": "22",
+			"interval": "-1L",
+			"lapsLed": "0 ",
+			"lapsCompleted": "133",
+			"status": "Running"
+		},
+		{
+			"driverName": "J Green",
+			"carNumber": "30",
+			"interval": "-1L",
+			"lapsLed": "3 ",
+			"lapsCompleted": "133",
+			"status": "Running"
+		},
+		{
+			"driverName": "T Reils",
+			"carNumber": "153",
+			"interval": "-1L",
+			"lapsLed": "0 ",
+			"lapsCompleted": "133",
+			"status": "Running"
+		},
+		{
+			"driverName": "J Spencer",
+			"carNumber": "7",
+			"interval": "-2L",
+			"lapsLed": "0 ",
+			"lapsCompleted": "132",
+			"status": "Running"
+		},
+		{
+			"driverName": "M Waltrip",
+			"carNumber": "15",
+			"interval": "-2L",
+			"lapsLed": "0 ",
+			"lapsCompleted": "132",
+			"status": "Running"
+		},
+		{
+			"driverName": "K Harvick",
+			"carNumber": "29",
+			"interval": "-35L",
+			"lapsLed": "0 ",
+			"lapsCompleted": "99",
+			"status": "Accident"
+		},
+		{
+			"driverName": "K Schrader",
+			"carNumber": "49",
+			"interval": "-36L",
+			"lapsLed": "0 ",
+			"lapsCompleted": "98",
+			"status": "Accident"
+		},
+		{
+			"driverName": "J Andretti",
+			"carNumber": "43",
+			"interval": "-36L",
+			"lapsLed": "0 ",
+			"lapsCompleted": "98",
+			"status": "Accident"
+		},
+		{
+			"driverName": "J Mayfield",
+			"carNumber": "19",
+			"interval": "-36L",
+			"lapsLed": "0 ",
+			"lapsCompleted": "98",
+			"status": "Retired"
+		},
+		{
+			"driverName": "T Stewart",
+			"carNumber": "20",
+			"interval": "-124L",
+			"lapsLed": "0 ",
+			"lapsCompleted": "10",
+			"status": "Accident"
+		}
+	],
+	"qualiCount":"43",
+	"raceCount":"43",
+	"raceName":"Kentucky Speedway",
+	"raceDate":"05/20/25",
+	"cautions":"Caution Flags: 1 (4 laps)",
+	"leadChanges":"Lead Changes: 6 (5 drivers)",
+	"weather":"Weather: Cloudy, 81 °F, West 20 mph",
+	"pitstopFrequency":"Pitstop Frequency: 1x",
+	"aiStrength":"AI Strength: 97%"
 }
   ]
 }
